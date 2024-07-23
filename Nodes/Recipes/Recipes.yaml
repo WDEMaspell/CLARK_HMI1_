@@ -134,7 +134,7 @@ Children:
   - Name: TargetNode
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS"
+    Value: {"IdType":2,"Id":"40844ff0e4f760b60a634faf73bf4f42","Namespace":30}
     Children:
     - Name: Kind
       Type: PropertyType

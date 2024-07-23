@@ -44,10 +44,50 @@ Children:
       - Name: MaximumLength
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 20
+        Value: 21
       - Name: Encoding
         Type: BaseDataVariableType
         DataType: Encoding
+    - Name: BACK_LEFT_TEMPERATURE
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.BACK_LEFT_TEMPERATURE"
+    - Name: BACK_RIGHT_TEMPERATURE
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.BACK_RIGHT_TEMPERATURE"
+    - Name: BackVf1InverterCurrent
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.BackVf1InverterCurrent"
+    - Name: BackVf1InverterFrequency
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.BackVf1InverterFrequency"
+    - Name: BackVf1InverterPower
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.BackVf1InverterPower"
     - Name: CLOSED_DOOR_SAF_LS_RELAIS
       Type: CODESYSTag
       DataType: Boolean
@@ -56,14 +96,38 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.CLOSED_DOOR_SAF_LS_RELAIS"
-    - Name: COND_WATER_DISCH_STEP
+    - Name: COMPRESSED_AIR_PRESSURE
       Type: CODESYSTag
-      DataType: Int16
+      DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.COND_WATER_DISCH_STEP"
+        Value: "Application.GVL.COMPRESSED_AIR_PRESSURE"
+    - Name: CONDENSER_FAN_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.CONDENSER_FAN_RELE"
+    - Name: CONDENSER_FAN_VC1_MOT_PROT
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.CONDENSER_FAN_VC1_MOT_PROT"
+    - Name: CONDENSER_FAN_VC2_MOT_PROT
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.CONDENSER_FAN_VC2_MOT_PROT"
     - Name: Condenser_Temperature_Delta_set
       Type: CODESYSTag
       DataType: Int16
@@ -80,6 +144,22 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.Condenser_Temperature_Set"
+    - Name: CondenserWaterTypeTemperSet
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.CondenserWaterTypeTemperSet"
+    - Name: CONTROL_VOLTAGE_CHECK_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.CONTROL_VOLTAGE_CHECK_RELE"
     - Name: Cooling_Temperature_Set
       Type: CODESYSTag
       DataType: Int16
@@ -110,6 +190,70 @@ Children:
       - Name: Encoding
         Type: BaseDataVariableType
         DataType: Encoding
+    - Name: Cooling_Tower_Antifreeze_Temperature_Set
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.Cooling_Tower_Antifreeze_Temperature_Set"
+    - Name: COOLING_TOWER_FAN_PROT
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.COOLING_TOWER_FAN_PROT"
+    - Name: COOLING_TOWER_FAN_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.COOLING_TOWER_FAN_RELE"
+    - Name: COOLING_TOWER_HEATER_PROT
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.COOLING_TOWER_HEATER_PROT"
+    - Name: COOLING_TOWER_HEATING_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.COOLING_TOWER_HEATING_RELE"
+    - Name: COOLING_TOWER_PUMP_PROT
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.COOLING_TOWER_PUMP_PROT"
+    - Name: COOLING_TOWER_PUMP_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.COOLING_TOWER_PUMP_RELE"
+    - Name: COOLING_TOWER_TEMPERATURE
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.COOLING_TOWER_TEMPERATURE"
     - Name: Cooling_Tower_Temperature_Delta_set
       Type: CODESYSTag
       DataType: Int16
@@ -126,6 +270,14 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.Cooling_Tower_Temperature_Set"
+    - Name: DlActualHumWeight
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlActualHumWeight"
     - Name: DlBackLeftHeaterTemperature
       Type: CODESYSTag
       DataType: Int16
@@ -158,6 +310,70 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.DlBackRightTemperature"
+    - Name: DlBackVf1BearingTemperature
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlBackVf1BearingTemperature"
+    - Name: DlBattery1OutVoltage
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlBattery1OutVoltage"
+    - Name: DlBattery2OutVoltage
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlBattery2OutVoltage"
+    - Name: DlBatteryCharger1OutCurrent
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlBatteryCharger1OutCurrent"
+    - Name: DlBatteryCharger2OutCurrent
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlBatteryCharger2OutCurrent"
+    - Name: DlCondenser1Temperature
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlCondenser1Temperature"
+    - Name: DlCoolingTowerTemperature
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlCoolingTowerTemperature"
+    - Name: DlDoorFanDifferentialPressure
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlDoorFanDifferentialPressure"
     - Name: DlDoorLeftHeaterTemperature
       Type: CODESYSTag
       DataType: Int16
@@ -190,22 +406,30 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.DlDoorRightTemperature"
-    - Name: DlDryerInitialTemperature
+    - Name: DlDoorVp1BearingTemperature
       Type: CODESYSTag
       DataType: Int16
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.DlDryerInitialTemperature"
-    - Name: DlDryerTemperature
+        Value: "Application.GVL.DlDoorVp1BearingTemperature"
+    - Name: DlEssPrehActualTemperatureSet
       Type: CODESYSTag
       DataType: Int16
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.DlDryerTemperature"
+        Value: "Application.GVL.DlEssPrehActualTemperatureSet"
+    - Name: DlGlycolTemperature
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlGlycolTemperature"
     - Name: DlHumidityAverage
       Type: CODESYSTag
       DataType: Int16
@@ -270,14 +494,22 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.DlInitialHumWeight"
-    - Name: DlPrehActualTemperSet
+    - Name: DlNitrogenPressure
       Type: CODESYSTag
       DataType: Int16
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.DlPrehActualTemperSet"
+        Value: "Application.GVL.DlNitrogenPressure"
+    - Name: DlPowerCounter
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlPowerCounter"
     - Name: DlPressure
       Type: CODESYSTag
       DataType: Int16
@@ -286,14 +518,102 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.DlPressure"
-    - Name: DOOR_MAIN_HEATING_RELE
+    - Name: DlTvsPrehActualTemperatureSet
       Type: CODESYSTag
-      DataType: Boolean
+      DataType: Int16
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.DOOR_MAIN_HEATING_RELE"
+        Value: "Application.GVL.DlTvsPrehActualTemperatureSet"
+    - Name: DlUps1OutputCurrent
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlUps1OutputCurrent"
+    - Name: DlUps2OutAcVoltage
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlUps2OutAcVoltage"
+    - Name: DlUps2OutputCurrent
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlUps2OutputCurrent"
+    - Name: DlUpsCabinetTemperature
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlUpsCabinetTemperature"
+    - Name: DlVacuumTankTemperature
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlVacuumTankTemperature"
+    - Name: DlWoodcore1Temperature
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DlWoodcore1Temperature"
+    - Name: DOOR_LEFT_TEMPERATURE
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DOOR_LEFT_TEMPERATURE"
+    - Name: DOOR_RIGHT_TEMPERATURE
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DOOR_RIGHT_TEMPERATURE"
+    - Name: DoorVp1InverterCurrent
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DoorVp1InverterCurrent"
+    - Name: DoorVp1InverterFrequency
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DoorVp1InverterFrequency"
+    - Name: DoorVp1InverterPower
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DoorVp1InverterPower"
     - Name: DRYER_ABS_PRESSURE
       Type: CODESYSTag
       DataType: Int16
@@ -302,6 +622,14 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.DRYER_ABS_PRESSURE"
+    - Name: DRYER_COOLING_FAN_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DRYER_COOLING_FAN_RELE"
     - Name: Drying_Time_Set
       Type: CODESYSTag
       DataType: Duration
@@ -324,6 +652,22 @@ Children:
       - Name: Encoding
         Type: BaseDataVariableType
         DataType: Encoding
+    - Name: DRYING_WATER_DISCHARGED
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.DRYING_WATER_DISCHARGED"
+    - Name: EL_CAB_HIGH_TEMPER_THERMOSTAT
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.EL_CAB_HIGH_TEMPER_THERMOSTAT"
     - Name: EMERGENCY_BUTTON_RELAY
       Type: CODESYSTag
       DataType: Boolean
@@ -332,6 +676,70 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.EMERGENCY_BUTTON_RELAY"
+    - Name: GLYCOL_FAN_MOT_PROT
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.GLYCOL_FAN_MOT_PROT"
+    - Name: GLYCOL_FAN_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.GLYCOL_FAN_RELE"
+    - Name: GLYCOL_LOW_LEVEL
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.GLYCOL_LOW_LEVEL"
+    - Name: GLYCOL_PUMP_MOT_PROT
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.GLYCOL_PUMP_MOT_PROT"
+    - Name: GLYCOL_PUMP_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.GLYCOL_PUMP_RELE"
+    - Name: GLYCOL_VERY_LOW_LEVEL
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.GLYCOL_VERY_LOW_LEVEL"
+    - Name: GlycolTemperatureDeltaSet
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.GlycolTemperatureDeltaSet"
+    - Name: GlycolTemperatureSet
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.GlycolTemperatureSet"
     - Name: GradTemper_x_min
       Type: CODESYSTag
       DataType: Float
@@ -420,22 +828,246 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.K_TemperCompens"
-    - Name: LEFT_VENTILATION_RELE
+    - Name: LEFT_VENTILATION_RELE_1
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.LEFT_VENTILATION_RELE"
-    - Name: MkAllBackFanImt
+        Value: "Application.GVL.LEFT_VENTILATION_RELE_1"
+    - Name: LS_PIST_INF_CH_PORTA_AV
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllBackFanImt"
+        Value: "Application.GVL.LS_PIST_INF_CH_PORTA_AV"
+    - Name: LS_PIST_SUP_CH_PORTA_AV
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_PIST_SUP_CH_PORTA_AV"
+    - Name: LS_SA1_AP
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_SA1_AP"
+    - Name: LS_SA1_CH
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_SA1_CH"
+    - Name: LS_SA2_AP
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_SA2_AP"
+    - Name: LS_SA2_CH
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_SA2_CH"
+    - Name: LS_SOLL_PIST_CH_PORTA_ALTO
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_SOLL_PIST_CH_PORTA_ALTO"
+    - Name: LS_SOLL_PIST_CH_PORTA_BASSO
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_SOLL_PIST_CH_PORTA_BASSO"
+    - Name: LS_VEA_AP
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VEA_AP"
+    - Name: LS_VEA_CH
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VEA_CH"
+    - Name: LS_VEE_AP
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VEE_AP"
+    - Name: LS_VEE_CH
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VEE_CH"
+    - Name: LS_VET_AP
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VET_AP"
+    - Name: LS_VET_CH
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VET_CH"
+    - Name: LS_VL_AP
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VL_AP"
+    - Name: LS_VL_CH
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VL_CH"
+    - Name: LS_VPE1_AP
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VPE1_AP"
+    - Name: LS_VPE1_CH
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VPE1_CH"
+    - Name: LS_VPV_AP
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VPV_AP"
+    - Name: LS_VPV_CH
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VPV_CH"
+    - Name: LS_VSE1_AP
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VSE1_AP"
+    - Name: LS_VSE1_CH
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VSE1_CH"
+    - Name: LS_VWE1_AP
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VWE1_AP"
+    - Name: LS_VWE1_CH
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VWE1_CH"
+    - Name: LS_VWE2_AP
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VWE2_AP"
+    - Name: LS_VWE2_CH
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.LS_VWE2_CH"
+    - Name: MkAlarmHigh
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAlarmHigh"
+    - Name: MkAlarmLow
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAlarmLow"
+    - Name: MkAllActive
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllActive"
     - Name: MkAllBackLeftHighTemper
       Type: CODESYSTag
       DataType: Boolean
@@ -452,6 +1084,30 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllBackRightHighTemper"
+    - Name: MkAllBackVf1FanFailure
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllBackVf1FanFailure"
+    - Name: MkAllBackVf1FanImt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllBackVf1FanImt"
+    - Name: MkAllBackVf1FanInverter
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllBackVf1FanInverter"
     - Name: MkAllClosedDoorLimSw
       Type: CODESYSTag
       DataType: Boolean
@@ -460,6 +1116,14 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllClosedDoorLimSw"
+    - Name: MkAllCommandPowerFailure
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllCommandPowerFailure"
     - Name: MkAllCommTcpSioFail
       Type: CODESYSTag
       DataType: Boolean
@@ -468,14 +1132,62 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllCommTcpSioFail"
-    - Name: MkAllDoorFanImt
+    - Name: MkAllCompressedAirLow
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllDoorFanImt"
+        Value: "Application.GVL.MkAllCompressedAirLow"
+    - Name: MkAllCondAirPumpMaxLevelTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllCondAirPumpMaxLevelTooLong"
+    - Name: MkAllCondenserFanVc1Imt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllCondenserFanVc1Imt"
+    - Name: MkAllCondenserFanVc2Imt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllCondenserFanVc2Imt"
+    - Name: MkAllCoolingTowerFanImt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllCoolingTowerFanImt"
+    - Name: MkAllCoolingTowerHeaterImtd
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllCoolingTowerHeaterImtd"
+    - Name: MkAllCoolingTowerPumpImt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllCoolingTowerPumpImt"
     - Name: MkAllDoorLeftHighTemper
       Type: CODESYSTag
       DataType: Boolean
@@ -492,6 +1204,86 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllDoorRightHighTemper"
+    - Name: MkAllDoorVp1FanFailure
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllDoorVp1FanFailure"
+    - Name: MkAllDoorVp1FanImt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllDoorVp1FanImt"
+    - Name: MkAllDoorVp1FanInverter
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllDoorVp1FanInverter"
+    - Name: MkAllDryerCoolingFanVre1Imt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllDryerCoolingFanVre1Imt"
+    - Name: MkAllDryerCoolingFanVre2Imt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllDryerCoolingFanVre2Imt"
+    - Name: MkAllDryerPressureHigh
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllDryerPressureHigh"
+    - Name: MkAllDryerPressureHighInertizing
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllDryerPressureHighInertizing"
+    - Name: MkAllDryerTemperatureHigh
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllDryerTemperatureHigh"
+    - Name: MkAllDryerTemperatureHighInertizing
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllDryerTemperatureHighInertizing"
+    - Name: MkAllElectricalCabinetHighTemper
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllElectricalCabinetHighTemper"
     - Name: MkAllEmergencyButton
       Type: CODESYSTag
       DataType: Boolean
@@ -500,6 +1292,118 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllEmergencyButton"
+    - Name: MkAllFlapBackLeftCloseTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllFlapBackLeftCloseTimeTooLong"
+    - Name: MkAllFlapBackLeftOpenTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllFlapBackLeftOpenTimeTooLong"
+    - Name: MkAllFlapBackRightCloseTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllFlapBackRightCloseTimeTooLong"
+    - Name: MkAllFlapBackRightOpenTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllFlapBackRightOpenTimeTooLong"
+    - Name: MkAllFlapDoorLeftCloseTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllFlapDoorLeftCloseTimeTooLong"
+    - Name: MkAllFlapDoorLeftOpenTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllFlapDoorLeftOpenTimeTooLong"
+    - Name: MkAllFlapDoorRightCloseTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllFlapDoorRightCloseTimeTooLong"
+    - Name: MkAllFlapDoorRightOpenTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllFlapDoorRightOpenTimeTooLong"
+    - Name: MkAllGlycolBackVf1LowFlow
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllGlycolBackVf1LowFlow"
+    - Name: MkAllGlycolDoorVp1LowFlow
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllGlycolDoorVp1LowFlow"
+    - Name: MkAllGlycolFanImt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllGlycolFanImt"
+    - Name: MkAllGlycolLevelLow
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllGlycolLevelLow"
+    - Name: MkAllGlycolLevelVeryLow
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllGlycolLevelVeryLow"
+    - Name: MkAllGlycolPumpImt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllGlycolPumpImt"
     - Name: MkAllHighTemperInDrying
       Type: CODESYSTag
       DataType: Boolean
@@ -516,38 +1420,30 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllLowPressureInDrying"
-    - Name: MkAllModbusDryerBackCard2Fail
+    - Name: MkAllMainPowerFailure
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllModbusDryerBackCard2Fail"
-    - Name: MkAllModbusDryerBackCardFail
+        Value: "Application.GVL.MkAllMainPowerFailure"
+    - Name: MkAllModbusBackVf1InvFail
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllModbusDryerBackCardFail"
-    - Name: MkAllModbusDryerCard_2Fail
+        Value: "Application.GVL.MkAllModbusBackVf1InvFail"
+    - Name: MkAllModbusDoorVp1InvFail
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllModbusDryerCard_2Fail"
-    - Name: MkAllModbusDryerCard_3Fail
-      Type: CODESYSTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.MkAllModbusDryerCard_3Fail"
+        Value: "Application.GVL.MkAllModbusDoorVp1InvFail"
     - Name: MkAllModbusHumCardFail
       Type: CODESYSTag
       DataType: Boolean
@@ -556,14 +1452,126 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllModbusHumCardFail"
-    - Name: MkAllModbusVacuumTemperCardFail
+    - Name: MkAllModbusPowerCounterFail
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllModbusVacuumTemperCardFail"
+        Value: "Application.GVL.MkAllModbusPowerCounterFail"
+    - Name: MkAllModbusScaleFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllModbusScaleFail"
+    - Name: MkAllModbusSen11UpsFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllModbusSen11UpsFail"
+    - Name: MkAllModbusSen12UpsFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllModbusSen12UpsFail"
+    - Name: MkAllModbusSen2DryerFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllModbusSen2DryerFail"
+    - Name: MkAllModbusSen3DryerFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllModbusSen3DryerFail"
+    - Name: MkAllModbusSen4DryerFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllModbusSen4DryerFail"
+    - Name: MkAllModbusSen5VacuumFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllModbusSen5VacuumFail"
+    - Name: MkAllNitrogenPressureLow
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllNitrogenPressureLow"
+    - Name: MkAllNitrogenPressureTransmFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllNitrogenPressureTransmFail"
+    - Name: MkAllNitrogenPressureVeryLow
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllNitrogenPressureVeryLow"
+    - Name: MkAllNotAcknowledged
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllNotAcknowledged"
+    - Name: MkAllNozzlesSteamingPumpImt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllNozzlesSteamingPumpImt"
+    - Name: MkAllProbe1CondensTemperFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllProbe1CondensTemperFail"
+    - Name: MkAllProbe1WoodcoreTemperFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllProbe1WoodcoreTemperFail"
     - Name: MkAllProbeBackLeftTemperFail
       Type: CODESYSTag
       DataType: Boolean
@@ -580,6 +1588,22 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllProbeBackRightTemperFail"
+    - Name: MkAllProbeBackVf1FanBearingTemperFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllProbeBackVf1FanBearingTemperFail"
+    - Name: MkAllProbeCoolingTowerTemperFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllProbeCoolingTowerTemperFail"
     - Name: MkAllProbeDoorLeftTemperFail
       Type: CODESYSTag
       DataType: Boolean
@@ -596,38 +1620,86 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllProbeDoorRightTemperFail"
-    - Name: MkAllThermostLeftBackHighTemper
+    - Name: MkAllProbeDoorVp1FanBearingTemperFail
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllThermostLeftBackHighTemper"
-    - Name: MkAllThermostLeftDoorHighTemper
+        Value: "Application.GVL.MkAllProbeDoorVp1FanBearingTemperFail"
+    - Name: MkAllProbeGlycolTemperFail
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllThermostLeftDoorHighTemper"
-    - Name: MkAllThermostRightBackHighTemper
+        Value: "Application.GVL.MkAllProbeGlycolTemperFail"
+    - Name: MkAllProbeVacuumTankTemperFail
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllThermostRightBackHighTemper"
-    - Name: MkAllThermostRightDoorHighTemper
+        Value: "Application.GVL.MkAllProbeVacuumTankTemperFail"
+    - Name: MkAllThermostBackLeftHighTemper
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllThermostRightDoorHighTemper"
+        Value: "Application.GVL.MkAllThermostBackLeftHighTemper"
+    - Name: MkAllThermostBackRightHighTemper
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllThermostBackRightHighTemper"
+    - Name: MkAllThermostDoorLeftHighTemper
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllThermostDoorLeftHighTemper"
+    - Name: MkAllThermostDoorRightHighTemper
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllThermostDoorRightHighTemper"
+    - Name: MkAllUps1Failure
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllUps1Failure"
+    - Name: MkAllUps2Failure
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllUps2Failure"
+    - Name: MkAllVacuumPumpFanImt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVacuumPumpFanImt"
     - Name: MkAllVacuumPumpImt
       Type: CODESYSTag
       DataType: Boolean
@@ -636,6 +1708,30 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllVacuumPumpImt"
+    - Name: MkAllVacuumTankMaxLevelTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVacuumTankMaxLevelTooLong"
+    - Name: MkAllVacuumTankPumpImt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVacuumTankPumpImt"
+    - Name: MkAllVacuumTankRefillTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVacuumTankRefillTooLong"
     - Name: MkAllVacuumTransmitterFail
       Type: CODESYSTag
       DataType: Boolean
@@ -644,46 +1740,174 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllVacuumTransmitterFail"
-    - Name: MkAllVsce1OpenToAtmTimeTooLong
+    - Name: MkAllVeaCloseTimeTooLong
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllVsce1OpenToAtmTimeTooLong"
-    - Name: MkAllVsce1OpenToDryerTimeTooLong
+        Value: "Application.GVL.MkAllVeaCloseTimeTooLong"
+    - Name: MkAllVeaOpenTimeTooLong
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllVsce1OpenToDryerTimeTooLong"
-    - Name: MkCheckModbusHumCardFail
+        Value: "Application.GVL.MkAllVeaOpenTimeTooLong"
+    - Name: MkAllVeeCloseTimeTooLong
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkCheckModbusHumCardFail"
-    - Name: MkCheckModbusVacuumTemperCardFail
+        Value: "Application.GVL.MkAllVeeCloseTimeTooLong"
+    - Name: MkAllVeeOpenTimeTooLong
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkCheckModbusVacuumTemperCardFail"
-    - Name: MkCheckTcpSioFail
+        Value: "Application.GVL.MkAllVeeOpenTimeTooLong"
+    - Name: MkAllVetCloseTimeTooLong
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkCheckTcpSioFail"
+        Value: "Application.GVL.MkAllVetCloseTimeTooLong"
+    - Name: MkAllVetOpenTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVetOpenTimeTooLong"
+    - Name: MkAllVlCloseTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVlCloseTimeTooLong"
+    - Name: MkAllVlOpenTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVlOpenTimeTooLong"
+    - Name: MkAllVpe1CloseTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVpe1CloseTimeTooLong"
+    - Name: MkAllVpe1OpenTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVpe1OpenTimeTooLong"
+    - Name: MkAllVpvCloseTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVpvCloseTimeTooLong"
+    - Name: MkAllVpvOpenTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVpvOpenTimeTooLong"
+    - Name: MkAllVsa1CloseTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVsa1CloseTimeTooLong"
+    - Name: MkAllVsa1OpenTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVsa1OpenTimeTooLong"
+    - Name: MkAllVse1CloseTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVse1CloseTimeTooLong"
+    - Name: MkAllVse1OpenTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVse1OpenTimeTooLong"
+    - Name: MkAllVwe1CloseTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVwe1CloseTimeTooLong"
+    - Name: MkAllVwe1OpenTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVwe1OpenTimeTooLong"
+    - Name: MkAllVwe2CloseTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVwe2CloseTimeTooLong"
+    - Name: MkAllVwe2OpenTimeTooLong
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllVwe2OpenTimeTooLong"
+    - Name: MkClock_1_h
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkClock_1_h"
     - Name: MkClock_1_min
       Type: CODESYSTag
       DataType: Boolean
@@ -708,30 +1932,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkClock_3_sec"
-    - Name: MkCondenserDischValveOpen
-      Type: CODESYSTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.MkCondenserDischValveOpen"
-    - Name: MkDryerDischValveClose
-      Type: CODESYSTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.MkDryerDischValveClose"
-    - Name: MkDryerDischValveOpen
-      Type: CODESYSTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.MkDryerDischValveOpen"
     - Name: MkDryerInManual
       Type: CODESYSTag
       DataType: Boolean
@@ -740,6 +1940,54 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkDryerInManual"
+    - Name: MkInertCleanStep1
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkInertCleanStep1"
+    - Name: MkInertCleanStep2
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkInertCleanStep2"
+    - Name: MkInertCleanStep3
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkInertCleanStep3"
+    - Name: MkInertCleanStep4
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkInertCleanStep4"
+    - Name: MkInertCleanStep5
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkInertCleanStep5"
+    - Name: MkInertCleanStep6
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkInertCleanStep6"
     - Name: MkLeftVentilationEnd
       Type: CODESYSTag
       DataType: Boolean
@@ -772,22 +2020,54 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkManCommCondenserFan"
-    - Name: MkManCommCondenserVscc1ValveToAtm
+    - Name: MkManCommCoolingTowerFan
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkManCommCondenserVscc1ValveToAtm"
-    - Name: MkManCommDryerVsce1ValveToAtm
+        Value: "Application.GVL.MkManCommCoolingTowerFan"
+    - Name: MkManCommCoolingTowerHeater
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkManCommDryerVsce1ValveToAtm"
+        Value: "Application.GVL.MkManCommCoolingTowerHeater"
+    - Name: MkManCommCoolingTowerPump
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommCoolingTowerPump"
+    - Name: MkManCommDryerCoolingFan
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommDryerCoolingFan"
+    - Name: MkManCommGlycolFan
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommGlycolFan"
+    - Name: MkManCommGlycolPump
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommGlycolPump"
     - Name: MkManCommHeating
       Type: CODESYSTag
       DataType: Boolean
@@ -820,6 +2100,142 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkManCommVacuumPump"
+    - Name: MkManCommVacuumPumpFan
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVacuumPumpFan"
+    - Name: MkManCommVacuumTankPump
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVacuumTankPump"
+    - Name: MkManCommVeaValve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVeaValve"
+    - Name: MkManCommVeeValve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVeeValve"
+    - Name: MkManCommVetValve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVetValve"
+    - Name: MkManCommVlValve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVlValve"
+    - Name: MkManCommVpaValve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVpaValve"
+    - Name: MkManCommVpeValve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVpeValve"
+    - Name: MkManCommVpsValve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVpsValve"
+    - Name: MkManCommVpvValve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVpvValve"
+    - Name: MkManCommVsaValveClose
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVsaValveClose"
+    - Name: MkManCommVsaValveOpen
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVsaValveOpen"
+    - Name: MkManCommVseValve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVseValve"
+    - Name: MkManCommVsgGlycolTank
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVsgGlycolTank"
+    - Name: MkManCommVwe1Valve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVwe1Valve"
+    - Name: MkManCommVwe2Valve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVwe2Valve"
+    - Name: MkManCommVwtValve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkManCommVwtValve"
     - Name: MkOff
       Type: CODESYSTag
       DataType: Boolean
@@ -836,14 +2252,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkOkTemperCondenserFan"
-    - Name: MkOkTemperCoolingTowerFan
-      Type: CODESYSTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.MkOkTemperCoolingTowerFan"
     - Name: MkOkTemperCoolingTowerHeating
       Type: CODESYSTag
       DataType: Boolean
@@ -916,14 +2324,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkPnlActHumProbe8"
-    - Name: MkPreheatingOn
-      Type: CODESYSTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.MkPreheatingOn"
     - Name: MkPressOkForVentil
       Type: CODESYSTag
       DataType: Boolean
@@ -980,6 +2380,150 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkSafeTimeRightVentStop"
+    - Name: MkTimeCycleOn
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkTimeCycleOn"
+    - Name: MkTvsInertizingCoolingOn
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkTvsInertizingCoolingOn"
+    - Name: MkTvsInertizingOn
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkTvsInertizingOn"
+    - Name: MkTvsOkToForcedFinalCooling
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkTvsOkToForcedFinalCooling"
+    - Name: MkTvsVazValveOpen
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkTvsVazValveOpen"
+    - Name: MkVacCleanCondenserClean
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacCleanCondenserClean"
+    - Name: MkVacCleanCondenserEmpt
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacCleanCondenserEmpt"
+    - Name: MkVacCleanCycleEndMsg
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacCleanCycleEndMsg"
+    - Name: MkVacCleanVacAdditiveMsg
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacCleanVacAdditiveMsg"
+    - Name: MkVacCleanVacCoolingClean
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacCleanVacCoolingClean"
+    - Name: MkVacCleanVacTankEmpt1
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacCleanVacTankEmpt1"
+    - Name: MkVacCleanVacTankEmpt2
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacCleanVacTankEmpt2"
+    - Name: MkVacCleanVacTankFill1
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacCleanVacTankFill1"
+    - Name: MkVacCleanVacTankFill2
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacCleanVacTankFill2"
+    - Name: MkVacCleanVacTankFinFill
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacCleanVacTankFinFill"
+    - Name: MkVacCleanVacTankHeating
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacCleanVacTankHeating"
+    - Name: MkVacuumCleanNotDone
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacuumCleanNotDone"
+    - Name: MkVacuumCleanOn
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkVacuumCleanOn"
     - Name: MkWoodThicknessMissing
       Type: CODESYSTag
       DataType: Boolean
@@ -996,6 +2540,62 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkWoodTypeMissing"
+    - Name: PnlCmdCleanVacAdditiveAdded
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.PnlCmdCleanVacAdditiveAdded"
+    - Name: PnlCmdCleanVacEndAck
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.PnlCmdCleanVacEndAck"
+    - Name: PnlCmdStartVacClean
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.PnlCmdStartVacClean"
+    - Name: PnlCmdStopVacClean
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.PnlCmdStopVacClean"
+    - Name: POWER_COUNTER_CYCLE_INT
+      Type: CODESYSTag
+      DataType: UInt32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.POWER_COUNTER_CYCLE_INT"
+    - Name: POWER_COUNTER_CYCLE_REAL
+      Type: CODESYSTag
+      DataType: Double
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.POWER_COUNTER_CYCLE_REAL"
+    - Name: POWER_VOLTAGE_CHEK_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.POWER_VOLTAGE_CHEK_RELE"
     - Name: PreH_Time_Set_Min
       Type: CODESYSTag
       DataType: Duration
@@ -1007,6 +2607,22 @@ Children:
       - Name: Encoding
         Type: BaseDataVariableType
         DataType: Encoding
+    - Name: PrehActualTemperSet
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.PrehActualTemperSet"
+    - Name: PressureSet
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.PressureSet"
     - Name: REAL_BACK_LEFT_HEATER_TEMPERATURE
       Type: CODESYSTag
       DataType: Float
@@ -1039,14 +2655,46 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.REAL_BACK_RIGHT_TEMPERATURE"
-    - Name: REAL_CONDENSER_TEMPER
+    - Name: REAL_BACK_VF1_FAN_BEARING_TEMPER
       Type: CODESYSTag
       DataType: Float
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.REAL_CONDENSER_TEMPER"
+        Value: "Application.GVL.REAL_BACK_VF1_FAN_BEARING_TEMPER"
+    - Name: REAL_BATTERY_CHARGER_1_OUT_CURRENT
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_BATTERY_CHARGER_1_OUT_CURRENT"
+    - Name: REAL_BATTERY_CHARGER_2_OUT_CURRENT
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_BATTERY_CHARGER_2_OUT_CURRENT"
+    - Name: REAL_CONDENSER_1_TEMPER
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_CONDENSER_1_TEMPER"
+    - Name: REAL_CONDENSER_2_TEMPER
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_CONDENSER_2_TEMPER"
     - Name: REAL_COOLING_TOWER_TEMPER
       Type: CODESYSTag
       DataType: Float
@@ -1095,6 +2743,14 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.REAL_DOOR_RIGHT_TEMPERATURE"
+    - Name: REAL_DOOR_VP1_FAN_BEARING_TEMPER
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_DOOR_VP1_FAN_BEARING_TEMPER"
     - Name: REAL_DRYER_TEMPERATURE
       Type: CODESYSTag
       DataType: Float
@@ -1103,6 +2759,14 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.REAL_DRYER_TEMPERATURE"
+    - Name: REAL_GLYCOL_TEMPERATURE
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_GLYCOL_TEMPERATURE"
     - Name: REAL_HUM_PROBE_1
       Type: CODESYSTag
       DataType: Float
@@ -1151,22 +2815,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.REAL_HUM_PROBE_6"
-    - Name: REAL_HUM_PROBE_7
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.REAL_HUM_PROBE_7"
-    - Name: REAL_HUM_PROBE_8
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.REAL_HUM_PROBE_8"
     - Name: REAL_HUMIDITY_AVERAGE
       Type: CODESYSTag
       DataType: Float
@@ -1175,6 +2823,14 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.REAL_HUMIDITY_AVERAGE"
+    - Name: REAL_NITROGEN_PRESSURE
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_NITROGEN_PRESSURE"
     - Name: REAL_PRESSURE
       Type: CODESYSTag
       DataType: Float
@@ -1191,22 +2847,70 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.REAL_TEMPER_SET_FOR_GRAPH"
-    - Name: REAL_WATER_TANK_TEMPER
+    - Name: REAL_UPS_1_OUT_VOLTAGE
       Type: CODESYSTag
       DataType: Float
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.REAL_WATER_TANK_TEMPER"
-    - Name: REAL_WEIGHT_ON_WOOD_APPLIED
+        Value: "Application.GVL.REAL_UPS_1_OUT_VOLTAGE"
+    - Name: REAL_UPS_1_OUTPUT_CURRENT
       Type: CODESYSTag
       DataType: Float
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.REAL_WEIGHT_ON_WOOD_APPLIED"
+        Value: "Application.GVL.REAL_UPS_1_OUTPUT_CURRENT"
+    - Name: REAL_UPS_2_OUT_AC_VOLTAGE
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_UPS_2_OUT_AC_VOLTAGE"
+    - Name: REAL_UPS_2_OUT_VOLTAGE
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_UPS_2_OUT_VOLTAGE"
+    - Name: REAL_UPS_2_OUTPUT_CURRENT
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_UPS_2_OUTPUT_CURRENT"
+    - Name: REAL_UPS_CABINET_TEMPERATURE
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_UPS_CABINET_TEMPERATURE"
+    - Name: REAL_VACUUM_TANK_TEMPERATURE
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_VACUUM_TANK_TEMPERATURE"
+    - Name: REAL_WOODCORE_1_TEMPERATURE
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.REAL_WOODCORE_1_TEMPERATURE"
     - Name: RealSetPressOkForVentil
       Type: CODESYSTag
       DataType: Float
@@ -1215,14 +2919,14 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.RealSetPressOkForVentil"
-    - Name: RIGHT_VENTILATION_RELE
+    - Name: RIGHT_VENTILATION_RELE_1
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.RIGHT_VENTILATION_RELE"
+        Value: "Application.GVL.RIGHT_VENTILATION_RELE_1"
     - Name: Temperature_Delta
       Type: CODESYSTag
       DataType: Int16
@@ -1231,22 +2935,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.Temperature_Delta"
-    - Name: TemperatureDeltaAuxHeating
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.TemperatureDeltaAuxHeating"
-    - Name: TemperatureDeltaMainHeating
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.TemperatureDeltaMainHeating"
     - Name: TemperatureSet
       Type: CODESYSTag
       DataType: Int16
@@ -1263,28 +2951,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.TemperReductMcCompens"
-    - Name: Time_condenser_disch_valve_close
-      Type: CODESYSTag
-      DataType: Duration
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.Time_condenser_disch_valve_close"
-      - Name: Encoding
-        Type: BaseDataVariableType
-        DataType: Encoding
-    - Name: Time_condenser_disch_valve_open
-      Type: CODESYSTag
-      DataType: Duration
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.Time_condenser_disch_valve_open"
-      - Name: Encoding
-        Type: BaseDataVariableType
-        DataType: Encoding
     - Name: Time_Delay_Start_Count
       Type: CODESYSTag
       DataType: Duration
@@ -1296,28 +2962,6 @@ Children:
       - Name: Encoding
         Type: BaseDataVariableType
         DataType: Encoding
-    - Name: Time_dryer_disch_valve_close
-      Type: CODESYSTag
-      DataType: Duration
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.Time_dryer_disch_valve_close"
-      - Name: Encoding
-        Type: BaseDataVariableType
-        DataType: Encoding
-    - Name: Time_dryer_disch_valve_open
-      Type: CODESYSTag
-      DataType: Duration
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.Time_dryer_disch_valve_open"
-      - Name: Encoding
-        Type: BaseDataVariableType
-        DataType: Encoding
     - Name: TIME_INS_DELAY
       Type: CODESYSTag
       DataType: Boolean
@@ -1326,6 +2970,49 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.TIME_INS_DELAY"
+    - Name: Time_PowerOn_DelayStart
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.Time_PowerOn_DelayStart"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TOTAL_WATER_DISCHARGED
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.TOTAL_WATER_DISCHARGED"
+    - Name: TREATM_WATER_DISCHARGED
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.TREATM_WATER_DISCHARGED"
+    - Name: VACUUM_PUMP_FAN_PROT
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VACUUM_PUMP_FAN_PROT"
+    - Name: VACUUM_PUMP_FAN_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VACUUM_PUMP_FAN_RELE"
     - Name: VACUUM_PUMP_MOT_PROT
       Type: CODESYSTag
       DataType: Boolean
@@ -1350,22 +3037,150 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.VACUUM_PUMP_SELECT"
-    - Name: WEIGHT_ACTUAL_HUMIDITY
+    - Name: VACUUM_TANK_HIGH_LEVEL
       Type: CODESYSTag
-      DataType: Float
+      DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.WEIGHT_ACTUAL_HUMIDITY"
-    - Name: WEIGHT_INITIAL_HUMIDITY
+        Value: "Application.GVL.VACUUM_TANK_HIGH_LEVEL"
+    - Name: VACUUM_TANK_LOW_LEVEL
       Type: CODESYSTag
-      DataType: Float
+      DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.WEIGHT_INITIAL_HUMIDITY"
+        Value: "Application.GVL.VACUUM_TANK_LOW_LEVEL"
+    - Name: VACUUM_TANK_PUMP_MOT_PROT
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VACUUM_TANK_PUMP_MOT_PROT"
+    - Name: VACUUM_TANK_PUMP_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VACUUM_TANK_PUMP_RELE"
+    - Name: VacuumTankTemperatureDeltaSet
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VacuumTankTemperatureDeltaSet"
+    - Name: VacuumTankTemperatureSet
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VacuumTankTemperatureSet"
+    - Name: VAZ_INERTIZING_VALVE_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VAZ_INERTIZING_VALVE_RELE"
+    - Name: VEA_VALVE_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VEA_VALVE_RELE"
+    - Name: VEE_VALVE_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VEE_VALVE_RELE"
+    - Name: VET_VALVE_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VET_VALVE_RELE"
+    - Name: VL_VALVE_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VL_VALVE_RELE"
+    - Name: VPA_VALVE_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VPA_VALVE_RELE"
+    - Name: VPE_VALVE_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VPE_VALVE_RELE"
+    - Name: VPV_VALVE_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VPV_VALVE_RELE"
+    - Name: VSE_VALVE_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VSE_VALVE_RELE"
+    - Name: VWE1_VALVE_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VWE1_VALVE_RELE"
+    - Name: VWE2_VALVE_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VWE2_VALVE_RELE"
+    - Name: VWT_VALVE_RELE
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.VWT_VALVE_RELE"
     - Name: WOOD_GROUP_SET
       Type: CODESYSTag
       DataType: Float
@@ -1376,7 +3191,7 @@ Children:
         Value: "Application.GVL.WOOD_GROUP_SET"
     - Name: WOOD_THICKNESS
       Type: CODESYSTag
-      DataType: Float
+      DataType: Int16
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
@@ -1393,7 +3208,7 @@ Children:
       - Name: MaximumLength
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 20
+        Value: 10
       - Name: Encoding
         Type: BaseDataVariableType
         DataType: Encoding
@@ -1458,7 +3273,6 @@ Children:
         Type: BaseDataVariableType
         DataType: Encoding
   - Name: GVL_ESS
-    Id: g=40844ff0e4f760b60a634faf73bf4f42
     Type: TagStructure
     DataType: Structure
     Value: 
@@ -1474,21 +3288,6 @@ Children:
       }
      }
     Children:
-    - Name: DescrEss
-      Type: CODESYSTag
-      DataType: String
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.DescrEss"
-      - Name: MaximumLength
-        Type: BaseDataVariableType
-        DataType: Int32
-        Value: 20
-      - Name: Encoding
-        Type: BaseDataVariableType
-        DataType: Encoding
     - Name: EssCooling_Remain_Time
       Type: CODESYSTag
       DataType: Duration
@@ -1606,38 +3405,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.EssPh1_Temperature_Set"
-    - Name: EssPh1DryingGradient
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh1DryingGradient"
-    - Name: EssPh1KcorrUmEq
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh1KcorrUmEq"
-    - Name: EssPh1SaturationTemperature
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh1SaturationTemperature"
-    - Name: EssPh1UmEqAdjusted
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh1UmEqAdjusted"
     - Name: EssPh2_Humidity_Set
       Type: CODESYSTag
       DataType: Int16
@@ -1662,38 +3429,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.EssPh2_Temperature_Set"
-    - Name: EssPh2DryingGradient
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh2DryingGradient"
-    - Name: EssPh2KcorrUmEq
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh2KcorrUmEq"
-    - Name: EssPh2SaturationTemperature
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh2SaturationTemperature"
-    - Name: EssPh2UmEqAdjusted
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh2UmEqAdjusted"
     - Name: EssPh3_Humidity_Set
       Type: CODESYSTag
       DataType: Int16
@@ -1718,38 +3453,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.EssPh3_Temperature_Set"
-    - Name: EssPh3DryingGradient
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh3DryingGradient"
-    - Name: EssPh3KcorrUmEq
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh3KcorrUmEq"
-    - Name: EssPh3SaturationTemperature
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh3SaturationTemperature"
-    - Name: EssPh3UmEqAdjusted
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh3UmEqAdjusted"
     - Name: EssPh4_Humidity_Set
       Type: CODESYSTag
       DataType: Int16
@@ -1774,38 +3477,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.EssPh4_Temperature_Set"
-    - Name: EssPh4DryingGradient
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh4DryingGradient"
-    - Name: EssPh4KcorrUmEq
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh4KcorrUmEq"
-    - Name: EssPh4SaturationTemperature
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh4SaturationTemperature"
-    - Name: EssPh4UmEqAdjusted
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh4UmEqAdjusted"
     - Name: EssPh5_Humidity_Set
       Type: CODESYSTag
       DataType: Int16
@@ -1830,38 +3501,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.EssPh5_Temperature_Set"
-    - Name: EssPh5DryingGradient
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh5DryingGradient"
-    - Name: EssPh5KcorrUmEq
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh5KcorrUmEq"
-    - Name: EssPh5SaturationTemperature
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh5SaturationTemperature"
-    - Name: EssPh5UmEqAdjusted
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh5UmEqAdjusted"
     - Name: EssPh6_Humidity_Set
       Type: CODESYSTag
       DataType: Int16
@@ -1886,38 +3525,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.EssPh6_Temperature_Set"
-    - Name: EssPh6DryingGradient
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh6DryingGradient"
-    - Name: EssPh6KcorrUmEq
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh6KcorrUmEq"
-    - Name: EssPh6SaturationTemperature
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh6SaturationTemperature"
-    - Name: EssPh6UmEqAdjusted
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh6UmEqAdjusted"
     - Name: EssPh7_Humidity_Set
       Type: CODESYSTag
       DataType: Int16
@@ -1942,38 +3549,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.EssPh7_Temperature_Set"
-    - Name: EssPh7DryingGradient
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh7DryingGradient"
-    - Name: EssPh7KcorrUmEq
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh7KcorrUmEq"
-    - Name: EssPh7SaturationTemperature
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh7SaturationTemperature"
-    - Name: EssPh7UmEqAdjusted
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh7UmEqAdjusted"
     - Name: EssPh8_Pressure_Set
       Type: CODESYSTag
       DataType: Int16
@@ -1990,38 +3565,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.EssPh8_Temperature_Set"
-    - Name: EssPh8DryingGradient
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh8DryingGradient"
-    - Name: EssPh8KcorrUmEq
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh8KcorrUmEq"
-    - Name: EssPh8SaturationTemperature
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh8SaturationTemperature"
-    - Name: EssPh8UmEqAdjusted
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPh8UmEqAdjusted"
     - Name: EssPreH_Pressure_Set
       Type: CODESYSTag
       DataType: Int16
@@ -2107,22 +3650,6 @@ Children:
       - Name: Encoding
         Type: BaseDataVariableType
         DataType: Encoding
-    - Name: EssPrehActualTemperSet
-      Type: CODESYSTag
-      DataType: Float
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPrehActualTemperSet"
-    - Name: EssPrehKcorrPress
-      Type: CODESYSTag
-      DataType: Int16
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.EssPrehKcorrPress"
     - Name: FinalHumiditySet
       Type: CODESYSTag
       DataType: Int16
@@ -2155,14 +3682,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.MkEssAutomaticOn"
-    - Name: MkEssCalculPressureHomogeneity
-      Type: CODESYSTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.MkEssCalculPressureHomogeneity"
     - Name: MkEssCoolingCounting
       Type: CODESYSTag
       DataType: Boolean
@@ -2203,6 +3722,22 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.MkEssCycleOn"
+    - Name: MkEssCycleStopConfirmed
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_ESS.MkEssCycleStopConfirmed"
+    - Name: MkEssDataLoggerDatiDeleted
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_ESS.MkEssDataLoggerDatiDeleted"
     - Name: MkEssDeleteDataLoggerCycle
       Type: CODESYSTag
       DataType: Boolean
@@ -2227,6 +3762,14 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.MkEssDryingOn"
+    - Name: MkEssMemFileDatiCycleHmi
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_ESS.MkEssMemFileDatiCycleHmi"
     - Name: MkEssMemFileDatiCycleUsb
       Type: CODESYSTag
       DataType: Boolean
@@ -2235,22 +3778,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.MkEssMemFileDatiCycleUsb"
-    - Name: MkEssMemFileDatiCycleUsbPnlComm
-      Type: CODESYSTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.MkEssMemFileDatiCycleUsbPnlComm"
-    - Name: MkEssMemManFileDatiCycleUsb
-      Type: CODESYSTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.MkEssMemManFileDatiCycleUsb"
     - Name: MkEssPh1_End
       Type: CODESYSTag
       DataType: Boolean
@@ -2411,6 +3938,14 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.MkEssPrehTimeOn"
+    - Name: MkEssStartingConditOk
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_ESS.MkEssStartingConditOk"
     - Name: MkEssStopOn
       Type: CODESYSTag
       DataType: Boolean
@@ -2419,14 +3954,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.MkEssStopOn"
-    - Name: MkSendFileDatiCycleByEmail
-      Type: CODESYSTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL_ESS.MkSendFileDatiCycleByEmail"
     - Name: PnlCmdAcknowlEssCycleEnd
       Type: CODESYSTag
       DataType: Boolean
@@ -2531,7 +4058,7 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_ESS.WoodStartingTemperatureSet"
-  - Name: PRESSURE_TEMPER_REGULATION
+  - Name: GVL_TVS
     Type: TagStructure
     DataType: Structure
     Value: 
@@ -2547,11 +4074,876 @@ Children:
       }
      }
     Children:
-    - Name: PressureSet
+    - Name: MkTvsActFileDatiCycleHmi
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsActFileDatiCycleHmi"
+    - Name: MkTvsAutomaticOn
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsAutomaticOn"
+    - Name: MkTvsCoolingCounting
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsCoolingCounting"
+    - Name: MkTvsCoolingEnd
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsCoolingEnd"
+    - Name: MkTvsCoolingOn
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsCoolingOn"
+    - Name: MkTvsCycleEnd
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsCycleEnd"
+    - Name: MkTvsCycleOn
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsCycleOn"
+    - Name: MkTvsCycleStopConfirmed
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsCycleStopConfirmed"
+    - Name: MkTvsDeleteDataLoggerCycle
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsDeleteDataLoggerCycle"
+    - Name: MkTvsMemFileDatiCycleHmi
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsMemFileDatiCycleHmi"
+    - Name: MkTvsMemFileDatiCycleUsb
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsMemFileDatiCycleUsb"
+    - Name: MkTvsPh1_End
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPh1_End"
+    - Name: MkTvsPh1_On
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPh1_On"
+    - Name: MkTvsPh1Counting
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPh1Counting"
+    - Name: MkTvsPh2_End
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPh2_End"
+    - Name: MkTvsPh2_On
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPh2_On"
+    - Name: MkTvsPh2Counting
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPh2Counting"
+    - Name: MkTvsPh3_End
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPh3_End"
+    - Name: MkTvsPh3_On
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPh3_On"
+    - Name: MkTvsPh3Counting
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPh3Counting"
+    - Name: MkTvsPreheatingCounting
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPreheatingCounting"
+    - Name: MkTvsPrehGradEnd
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPrehGradEnd"
+    - Name: MkTvsPrehGradOn
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPrehGradOn"
+    - Name: MkTvsPrehTimeEnd
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPrehTimeEnd"
+    - Name: MkTvsPrehTimeOn
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsPrehTimeOn"
+    - Name: MkTvsStartingConditOk
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsStartingConditOk"
+    - Name: MkTvsStopOn
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkTvsStopOn"
+    - Name: PnlCmdAcknowlTvsCycleEnd
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.PnlCmdAcknowlTvsCycleEnd"
+    - Name: PnlCmdConfirmTvsCycleStop
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.PnlCmdConfirmTvsCycleStop"
+    - Name: PnlCmdTvsCycleStart
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.PnlCmdTvsCycleStart"
+    - Name: PnlCmdTvsCycleStop
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.PnlCmdTvsCycleStop"
+    - Name: TvsCooling_Temperature_Set
       Type: CODESYSTag
       DataType: Int16
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.PRESSURE_TEMPER_REGULATION.PressureSet"
+        Value: "Application.GVL_TVS.TvsCooling_Temperature_Set"
+    - Name: TvsCooling_Time_Count
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsCooling_Time_Count"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsCooling_Time_Count_Hour
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsCooling_Time_Count_Hour"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsCooling_Time_Count_Min
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsCooling_Time_Count_Min"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsCooling_Time_Count_Sec
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsCooling_Time_Count_Sec"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsCooling_Time_Set
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsCooling_Time_Set"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsCooling_Time_Set_Min
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsCooling_Time_Set_Min"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsCycleNumber
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsCycleNumber"
+    - Name: TvsGradientTemperatureSet
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsGradientTemperatureSet"
+    - Name: TvsPh1_Pressure_Set
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh1_Pressure_Set"
+    - Name: TvsPh1_Remain_Time
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh1_Remain_Time"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh1_Temperature_Set
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh1_Temperature_Set"
+    - Name: TvsPh1_Time_Count
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh1_Time_Count"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh1_Time_Count_Hour
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh1_Time_Count_Hour"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh1_Time_Count_Min
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh1_Time_Count_Min"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh1_Time_Count_Sec
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh1_Time_Count_Sec"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh1_Time_Set
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh1_Time_Set"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh1_Time_Set_Min
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh1_Time_Set_Min"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh2_Pressure_Set
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh2_Pressure_Set"
+    - Name: TvsPh2_Remain_Time
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh2_Remain_Time"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh2_Temperature_Set
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh2_Temperature_Set"
+    - Name: TvsPh2_Time_Count
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh2_Time_Count"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh2_Time_Count_Hour
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh2_Time_Count_Hour"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh2_Time_Count_Min
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh2_Time_Count_Min"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh2_Time_Count_Sec
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh2_Time_Count_Sec"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh2_Time_Set
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh2_Time_Set"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh2_Time_Set_Min
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh2_Time_Set_Min"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh3_Pressure_Set
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh3_Pressure_Set"
+    - Name: TvsPh3_Remain_Time
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh3_Remain_Time"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh3_Temperature_Set
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh3_Temperature_Set"
+    - Name: TvsPh3_Time_Count
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh3_Time_Count"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh3_Time_Count_Hour
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh3_Time_Count_Hour"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh3_Time_Count_Min
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh3_Time_Count_Min"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh3_Time_Count_Sec
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh3_Time_Count_Sec"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh3_Time_Set
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh3_Time_Set"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPh3_Time_Set_Min
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPh3_Time_Set_Min"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPreH_Pressure_Set
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPreH_Pressure_Set"
+    - Name: TvsPreH_Remain_Time
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPreH_Remain_Time"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPreH_Temperature_Set
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPreH_Temperature_Set"
+    - Name: TvsPreH_Time_Count
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPreH_Time_Count"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPreH_Time_Count_Hour
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPreH_Time_Count_Hour"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPreH_Time_Count_Min
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPreH_Time_Count_Min"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPreH_Time_Count_Sec
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPreH_Time_Count_Sec"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPreH_Time_Set
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPreH_Time_Set"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsPreH_Time_Set_Min
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsPreH_Time_Set_Min"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+  - Name: GVL_VAPORIZER
+    Type: TagStructure
+    DataType: Structure
+    Value: 
+     {
+      "Type": 22,
+      "Body": {
+       "TypeId": {
+        "IdType": 0,
+        "Id": 0,
+        "Namespace": -1
+       },
+       "Body":    {}
+      }
+     }
+    Children:
+    - Name: MkManCommSteamGener
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.MkManCommSteamGener"
+    - Name: MkManCommSteamValve
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.MkManCommSteamValve"
+    - Name: MkTvsSteamConfirmed
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.MkTvsSteamConfirmed"
+    - Name: MkTvsSteamEnd
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.MkTvsSteamEnd"
+    - Name: MkTvsSteamOn
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.MkTvsSteamOn"
+    - Name: MkTvsSteamPnlConfirmOk
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.MkTvsSteamPnlConfirmOk"
+    - Name: MkTvsSteamPnlRequestAborted
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.MkTvsSteamPnlRequestAborted"
+    - Name: TvsSteamTimeCountHour
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.TvsSteamTimeCountHour"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsSteamTimeCountMin
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.TvsSteamTimeCountMin"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsSteamTimeCountSec
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.TvsSteamTimeCountSec"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsSteamTimeSetMin
+      Type: CODESYSTag
+      DataType: Duration
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.TvsSteamTimeSetMin"
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding
+    - Name: TvsSteamWaterCount
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.TvsSteamWaterCount"
+    - Name: TvsSteamWaterSet
+      Type: CODESYSTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_VAPORIZER.TvsSteamWaterSet"
+  - Name: UPS
+    Type: TagStructure
+    DataType: Structure
+    Value: 
+     {
+      "Type": 22,
+      "Body": {
+       "TypeId": {
+        "IdType": 0,
+        "Id": 0,
+        "Namespace": -1
+       },
+       "Body":    {}
+      }
+     }
+    Children:
+    - Name: testo
+      Type: CODESYSTag
+      DataType: String
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.UPS.testo"
+      - Name: MaximumLength
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 80
+      - Name: Encoding
+        Type: BaseDataVariableType
+        DataType: Encoding

@@ -15,7 +15,7 @@ Children:
 - Name: FilePath
   Type: BaseDataVariableType
   DataType: AbsoluteResourceUri
-  Value: "file:///C:/Users/FrancescoFabbri-WDEM/OneDrive - WDE MASPELL SRL/Desktop/programmi CODESYS/PROGRAMMI ASEM/AUTHENTIQUE-PARQUET-PLC/AUTHENTIQUE-PARQUET-PLC.Device.Application.xml"
+  Value: "file:///C:/Users/FrancescoFabbri-WDEM/OneDrive - WDE MASPELL SRL/Desktop/programmi CODESYS/PROGRAMMI ASEM/CLARK-PLC/CLARK-PLC.Device.Application.xml"
 - Name: ImportTypes
   Type: BaseDataVariableType
   DataType: Boolean
@@ -23,4 +23,3 @@ Children:
 - Name: Mode
   Type: BaseDataVariableType
   DataType: FetchProviderModes
-  Value: 1
