@@ -1,0 +1,558 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: EmbeddedDatabase1
+  Id: g=f8df0484d7502bb54fa95b81703d375c
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: AlarmsEventLogger1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ActiveState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: AckedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: ConfirmedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: ConditionName
+          Type: StoreColumn
+          DataType: String
+        - Name: EnabledState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+        - Name: Time
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: 'Message_en-US'
+          Type: StoreColumn
+          DataType: String
+        - Name: 'Message_it-IT'
+          Type: StoreColumn
+          DataType: String
+        - Name: Severity
+          Type: StoreColumn
+          DataType: UInt16
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: 'Message_fr-FR'
+          Type: StoreColumn
+          DataType: String
+        - Name: 'Message_nl-BE'
+          Type: StoreColumn
+          DataType: String
+        - Name: 'Message_es-ES'
+          Type: StoreColumn
+          DataType: String
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1001
+    - Name: DataLoggerGraficoEss
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: REAL_DOOR_LEFT_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_DOOR_LEFT_TEMPERATURE"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: REAL_DOOR_RIGHT_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_DOOR_RIGHT_TEMPERATURE"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: REAL_HUMIDITY_AVERAGE
+          Type: StoreColumn
+          DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_HUMIDITY_AVERAGE"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: REAL_PRESSURE
+          Type: StoreColumn
+          DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_PRESSURE"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: REAL_TEMPER_SET_FOR_GRAPH
+          Type: StoreColumn
+          DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_TEMPER_SET_FOR_GRAPH"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+    - Name: DataLoggerGraficoUmidità
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: REAL_HUM_PROBE_1
+          Type: StoreColumn
+          DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_HUM_PROBE_1"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: REAL_HUM_PROBE_2
+          Type: StoreColumn
+          DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_HUM_PROBE_2"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: REAL_HUM_PROBE_3
+          Type: StoreColumn
+          DataType: Float
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/REAL_HUM_PROBE_3"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+    - Name: Dati Ess
+      Id: g=5252b517e0709e4dfd469e35e12f4865
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: REAL_BACK_LEFT_HEATER_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_BACK_LEFT_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_BACK_RIGHT_HEATER_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_BACK_RIGHT_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_DOOR_LEFT_HEATER_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_DOOR_LEFT_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_DOOR_RIGHT_HEATER_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_DOOR_RIGHT_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_DRYER_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_HUM_PROBE_1
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_HUM_PROBE_2
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_HUM_PROBE_3
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_HUM_PROBE_4
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_HUM_PROBE_5
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_HUM_PROBE_6
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_HUMIDITY_AVERAGE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_PRESSURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: WOOD_GROUP_SET
+          Type: StoreColumn
+          DataType: Float
+        - Name: WOOD_THICKNESS
+          Type: StoreColumn
+          DataType: Float
+        - Name: WOOD_TYPE
+          Type: StoreColumn
+          DataType: String
+        - Name: DescrEss
+          Type: StoreColumn
+          DataType: String
+        - Name: EssCooling_Time_Set_Min
+          Type: StoreColumn
+          DataType: Duration
+        - Name: EssCycleNumber
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh1_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh1_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh1_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh2_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh2_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh2_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh3_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh3_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh3_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh4_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh4_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh5_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh5_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh5_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh6_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh7_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh7_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh7_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh8_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPh8_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: EssPreH_Time_Set_Min
+          Type: StoreColumn
+          DataType: Duration
+        - Name: EssPrehActualTemperSet
+          Type: StoreColumn
+          DataType: Float
+        - Name: FinalHumiditySet
+          Type: StoreColumn
+          DataType: Int16
+    - Name: RecipeSchema1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+        - Name: /DescrEss
+          Type: StoreColumn
+          DataType: String
+        - Name: /EssCooling_Time_Set
+          Type: StoreColumn
+          DataType: Duration
+        - Name: /EssPh1_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh1_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh1_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh2_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh2_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh2_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh3_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh3_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh3_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh4_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh4_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh4_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh5_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh5_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh5_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh6_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh6_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh6_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh7_Humidity_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh7_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh7_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh8_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPh8_Temperature_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPreH_Pressure_Set
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /EssPreH_Time_Set
+          Type: StoreColumn
+          DataType: Duration
+        - Name: /FinalHumiditySet
+          Type: StoreColumn
+          DataType: Int16
+        - Name: /GradientTemperatureSet
+          Type: StoreColumn
+          DataType: Float
+  - Class: Reference
+    Target: ns=25;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=11;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=59
+    Direction: Forward
+  - Name: InMemory
+    Type: BaseDataVariableType
+    DataType: Boolean

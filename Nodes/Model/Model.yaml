@@ -1,0 +1,17 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: LocaleChanged1
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../Locale"
+- Name: Locale
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- Name: UnitàMisuraTemp
+  Type: BaseDataVariableType
+  DataType: Int32

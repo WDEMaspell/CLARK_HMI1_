@@ -1,0 +1,241 @@
+Name: Recipes
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Id: g=43f78acbd777832d6aeaa5e3d5327221
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: DescrEss
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: EssCooling_Time_Set
+      Type: BaseDataVariableType
+      DataType: Duration
+    - Name: EssPh1_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh1_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh1_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh2_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh2_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh2_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh3_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh3_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh3_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh4_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh4_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh4_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh5_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh5_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh5_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh6_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh6_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh6_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh7_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh7_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh7_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh8_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh8_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPreH_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPreH_Time_Set
+      Type: BaseDataVariableType
+      DataType: Duration
+    - Name: FinalHumiditySet
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: GradientTemperatureSet
+      Type: BaseDataVariableType
+      DataType: Float
+  - Class: Reference
+    Target: ns=19;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=60
+    Direction: Forward
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: EditModel
+    Id: g=a6c00c4c6b740dfac94ca0bf7fb133b6
+    Type: BaseObjectType
+    Children:
+    - Name: DescrEss
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: EssCooling_Time_Set
+      Type: BaseDataVariableType
+      DataType: Duration
+    - Name: EssPh1_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh1_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh1_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh2_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh2_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh2_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh3_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh3_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh3_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh4_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh4_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh4_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh5_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh5_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh5_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh6_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh6_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh6_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh7_Humidity_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh7_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh7_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh8_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPh8_Temperature_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPreH_Pressure_Set
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: EssPreH_Time_Set
+      Type: BaseDataVariableType
+      DataType: Duration
+    - Name: FinalHumiditySet
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: GradientTemperatureSet
+      Type: BaseDataVariableType
+      DataType: Float
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/CLARK_HMI1_/DataStores/EmbeddedDatabase1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"

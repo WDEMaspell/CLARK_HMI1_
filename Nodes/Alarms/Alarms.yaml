@@ -1,0 +1,1488 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- Name: A001PulsanteEmergenza
+  Id: g=cdc5fcc04f91499eb6f01172ecd85cd0
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=2250d7574e8fb298c3737be13a215bc7
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=8e4e0880e2e9a42c1e3380f3f2770594
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=6849d9743f4d2da753de00edb2270b20
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllEmergencyButton"
+      Children:
+      - Name: Mode
+        Id: g=d50c27641f470917bbfd84d2842084e2
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=8d6e2a92feaf6dbbadbb874a11df6714
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=c29d3c53d88577287381d45392c0d9c0
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A001"}
+- Name: A002PortaNonChiusa
+  Id: g=07e6a1a05517c5ead3c8397110960663
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=07df2370d7d746f592148a1a25c75bb0
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=a4434e27200f6638b645f75fef4e6c04
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=3889d7ccb83830c194183c05ef0a4703
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllClosedDoorLimSw"
+      Children:
+      - Name: Mode
+        Id: g=1638f444237da24b6ebb4406c6e57c0f
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=8cf43b45dd254f5e08160d7cb55da25e
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=fac2a701130be67635aba9a81772785e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A002"}
+- Name: A003ErroreComm.I_O
+  Id: g=d115f283fad4b83812944ff1860e101c
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=ae1fa4b828ee68b56604e2a234006ba1
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=b79f691420ff4c4d4c65aeb7d47b6443
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=adddc82a378d430797951a0d71a84054
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllCommTcpSioFail"
+      Children:
+      - Name: Mode
+        Id: g=54939bf7d0c26bc5dabacc99d8c6cbd6
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=c4a69716f6b2f84bb72a0e46ea5be4eb
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=e1741b43b2fd9f5f2a74c18c00d37b23
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A003"}
+- Name: A004ErroreTemp.PortaDx
+  Id: g=6786c93c80e8f4d1926b3d55a621e545
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=45a5b0599a03d02748062ef764ef3717
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=2a2d99fce72573a143903ba3bc1f4bdd
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=f99e5313afb5dcfe314c494f11376234
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllProbeDoorRightTemperFail"
+      Children:
+      - Name: Mode
+        Id: g=913b54f0d0f9e68b41a3e026b5c9cca2
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=2001b94b21968777233d95139bcabf29
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=0981665469346f33a25ab86ac2fb2675
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A004"}
+- Name: A005ErroreTemp.PortaSx
+  Id: g=d80b751f349b1dd8dbea0d1d5fb46be2
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=4ecd55fb21645bf6ca6b3c64108e5f93
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=d82fac5fbc96fa87e76b6d16a54d5e59
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=bcda4b5a417471a64340ed54867c1871
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllProbeDoorLeftTemperFail"
+      Children:
+      - Name: Mode
+        Id: g=619b66c83eccd533ca6a6a7167041f36
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=56f32e48adda101af8d508fe21939fd5
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=c0e5205a6d44261bdd48387ff14df607
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A005"}
+- Name: A006A AltaTemp.Term.PortaDx
+  Id: g=57ea4f7e11df308c9b33a496fdfeb478
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=1f7d1ed74898834ce1de29464e42b81c
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=b6839b7e19e9ef5db3e41a76b57467f8
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=47bcf10d14c95fb4b6c0b13cdc31bcb3
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllThermostRightDoorHighTemper"
+      Children:
+      - Name: Mode
+        Id: g=8bb7ace286e6dfa236eac0dc4c3379f5
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=4a42ca0851dfe8b563c699353f6b3f90
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=8555047027117075a89db47e055aa46b
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A006A"}
+- Name: A006B AltaTemp.Term.PortaSx
+  Id: g=830d0e6196a78762ca667bb433adeece
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=d1ed7d205efcf8c933708550f5988308
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=0ae6ae1ca253638f6d75eeac483370e7
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=735d3c69ba87f6e989536ee0c8f86b89
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllThermostLeftDoorHighTemper"
+      Children:
+      - Name: Mode
+        Id: g=fa1681641da03e9ab8663afb29b1a070
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=bab02895671f518443f97f6e2ab7154b
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=c0df18e40a5ff8ff5c765d115c067700
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A006B"}
+- Name: A007AltaTemp.SondaPortaDx
+  Id: g=52a98b123fe51b9262d0c07fee0ce145
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=798f6811b2e81249baeb8b9521b411a4
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=3be5268f69b37dbf39fa3fbe523ed439
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=222f245a4a1f609be2cbccb23dc30b9c
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllDoorRightHighTemper"
+      Children:
+      - Name: Mode
+        Id: g=7e4fb9c0a4c2de7374c1563767ee5e25
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=10e1b560330e13ece04490d123961367
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=0c5a51c10a8f8e76d206314faecb37a5
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A007"}
+- Name: A008AltaTemp.SondaPortaSx
+  Id: g=42348c0447eb393cc82ec31ca4e2e4d6
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=c373af1f930212db76c2e46ef9b95232
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=2b25ea5fa9f0d9dab9a8b38d26135f0f
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=6dacdf28201c4482fc973c874fc4ed75
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllDoorLeftHighTemper"
+      Children:
+      - Name: Mode
+        Id: g=e78427f546f9aff78bbf012b626efa7d
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=aedf02457283d0195118679adf4d0f32
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=07267f548e2cee2ccdfbe4484f539806
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A008"}
+- Name: A009ErroreTemp.FondoDx
+  Id: g=69d342b99302c71b7092a23a16461447
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=1a66f1cdfbe2c7279f6846bfbe7e7b8a
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=b3f2ac1622343723c4757f6f34e6716d
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=2454603341dcbb10519e4fd134e0af43
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllProbeBackRightTemperFail"
+      Children:
+      - Name: Mode
+        Id: g=bbb60ae65b1a73e5ec9800da0b606708
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=264dff66aeb82348b2232745ea1fcfeb
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=0bb10348e494e79c45144b7189eeb2d2
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A009"}
+- Name: A010ErroreTemp.FondoSx
+  Id: g=c3bd6fbe7e7185f8bc89fac1d3698e24
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=26e201db68144c59c387595c3ff46bba
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=4081de3e61e44de19346aa2935bddef2
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=766e6f6b70f261030e3945eb4f6fb8de
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllProbeBackLeftTemperFail"
+      Children:
+      - Name: Mode
+        Id: g=36c101285f975cf823595ae45f19ffa6
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=3819c2e4d147ebb8085b129854baddbf
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=55cf7a272be12cb03602661fca2c58d3
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A010"}
+- Name: A011A AltaTemp.Term.FondoDx
+  Id: g=f0e1c46d70e77e30c8930d946754b92e
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=d2a1f098775ccda66029d420f91502d4
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=eb714d614943597d36b834d8e4e482d6
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=6ce6e592672ffa6837dd913a31eb6f03
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllThermostRightBackHighTemper"
+      Children:
+      - Name: Mode
+        Id: g=0fef25db50e5b82aaf2588eff6f68e11
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=3c433a1d9962ae489d9955f567625d7f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=bf84a962094033057dddb87428868d73
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A011A"}
+- Name: A011B AltaTemp.Term.FondoSx
+  Id: g=7678db9affdf1905a9ee3c0730dac8b3
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=c3a3f0cc477209a0a6279bfbde89b70b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=d0aad830825ee78490616a04fa35a734
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=84265abcb130d88d256df640aa4fa7c0
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllThermostLeftBackHighTemper"
+      Children:
+      - Name: Mode
+        Id: g=abda0b9a0c5fa0163408497940321ba9
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=a4e0f927f43458b523f4e8363ded0f6a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=7c168c25a45bcae42a2514a15ec01f3b
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A011B"}
+- Name: A012AltaTemp.SondaFondoDx
+  Id: g=07ea5a98729be7bb74b7f321aa580692
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=302e2e382d77c56ebb3d82ca54c8dd11
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=b289dd45a0b88d87fb0a2fa7dfc941d8
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=6726e86f00b5e78fc300beeca1cb1b14
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllBackRightHighTemper"
+      Children:
+      - Name: Mode
+        Id: g=001cd8146374e9bbdee544dd0811d158
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=a776712f2443ff49ff4222c50edff67b
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=cfa2094a6f7eaff6feaaee0806d7c059
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A012"}
+- Name: A013AltaTemp.SondaFondoDx
+  Id: g=00002dbcac8ab184760611ccce2c5cb9
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=e218378b39c00a3a3ad5357d1b032a7f
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=db17a1ed36e6fe0fbfca43fdc1390d62
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=ea7e7275f8587a4b3aec82846fe1cf84
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllBackLeftHighTemper"
+      Children:
+      - Name: Mode
+        Id: g=bde9525033dde585b6d37f524e92ab9e
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=ace783d76a10c8c13faaf1e833543a84
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=0188407a143ad63d0eae0e14d9d5641e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A013"}
+- Name: A015ImtVent.Porta
+  Id: g=89dd9770ac837ceb5b7a97679078a88d
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=7e3e167c82b542fa17d4ce42dc18673f
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=d43674a2d14e7ed28cf947db4255481b
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=2017f4872fb998466a99cd5e92861517
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllDoorFanImt"
+      Children:
+      - Name: Mode
+        Id: g=567ae60088c5a34b1c0c65bdb9dad5a3
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=31bb62307624ad9784c9b00d15290bfe
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=0615801db030c68fc1f48f08c57812dd
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A015"}
+- Name: A017ImtVent.Fondo
+  Id: g=f37ccde710f6cb070848bde3428079fa
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=1965974a7eb572e42d95233688d08920
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=12b4f490e912e4ea739c639536e2fb5f
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=3995871338cec33469d2f5cb825e3b9e
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllBackFanImt"
+      Children:
+      - Name: Mode
+        Id: g=14968e52f93a012bc1d596caf5cab04b
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=2f9d6ec031b982081d4979eac506301c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=44b61385f5c52e841d9dab844d8be6e5
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A017"}
+- Name: A018Rott.Trasm.Vuoto
+  Id: g=314980eac1c9d7bfa3c7b5f98c7fee61
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=928d125a6f095c5855a2dc25dfd5c7b8
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=375e49c4c5e026cc60c40cfe5533e780
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=74e996f012455e8eded33521397a2959
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllVacuumTransmitterFail"
+      Children:
+      - Name: Mode
+        Id: g=d05f0d6c44e06027fa56d6ec7efa2a4f
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=7da9da589480649f03b204551578a410
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=972b11d61dc4f6b18c934408f7169446
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A018"}
+- Name: A019ImtPompaVuoto
+  Id: g=6274fea7de4edad218c950c07aca56fa
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=285b64a1feb0f61861f4a3b83ed715a5
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=4e45f279e777f492e610d708eb18369f
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=8f38960e2be9623ceaa90991540e8184
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllVacuumPumpImt"
+      Children:
+      - Name: Mode
+        Id: g=1894b28a4ea51e3c61e77c5d5fe1b781
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=2dc85206086b384b37c760fd0eff6078
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=edf9197394df8a171840cebf7247f92a
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A019"}
+- Name: A020ImtVent.VC1
+  Id: g=31883e994a27413a26e28d2474d0203c
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=441b910bce377b9c4c9fe053424a6540
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=63cee083313087c1d2c6f10534cb4699
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=cbffb75b126d8fbacc9b341eceffdbd6
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllEmergencyButton"
+      Children:
+      - Name: Mode
+        Id: g=1023fa866f0988c1cc3a3d052dc5e7ea
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=9e5977f08c313721f6c012911f3186f8
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=85b07bf821a3d27774146cd592e77642
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A020"}
+- Name: A025ErroreTemp.Cond.
+  Id: g=eaa91ab4abea00f706f82a30f442a425
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=3828bbcf7f53d85eee31cf06d6b404da
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=c85aa00178e26dde16f3ba1df0ce5b26
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=69dd80ff1b2ced9cefa7c0907eb37e4a
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllEmergencyButton"
+      Children:
+      - Name: Mode
+        Id: g=1558ace98efe753a526c3111d8b8e309
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=a47f3054c43855d13f41b1afcf673bfd
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=90af0886ea6cc52d4f59377ea918e022
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A025"}
+- Name: A040AltaTemp.InEss
+  Id: g=ba04685517484b244a2441f1c608a278
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=f9b89f93b2bf64dfa7d9aa1de1867504
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=1a845bc254c19113d455fa6ac6a2b144
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=50b639c4c23150b3866c34f1913bd284
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllHighTemperInDrying"
+      Children:
+      - Name: Mode
+        Id: g=514963d83af2088a3f4049e07f8dd263
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=e78dea171956c21323fa5fe1c74f82e7
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=22964ff3e74c7c3ca6aee893140c785e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A040"}
+- Name: A041BassaPress.inEss
+  Id: g=4a742a11c2fadb4ebf9400498b2b0b7c
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=e5caf1fda756177a7e34ee2fe7c649b1
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=83465468291d61aa142675707ca96aa9
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=d64f37397fe657214e40a3ad965b1b94
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllLowPressureInDrying"
+      Children:
+      - Name: Mode
+        Id: g=b2d283844692687cbfdd6b7a73977772
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=1b8388a93e0faa3c2458bf4ae41d5a81
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=b438f646567d96ed9e72eba6221d0946
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A041"}
+- Name: 'A080ErroreComm.ModbusScheda#1Umid.'
+  Id: g=daca4a34aa7db75a8ec2112a6c95722e
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=6599e193dddc51bd67e4cc3dcbf33b7b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=3fe3c9139d7ed8ce59ae9240d9d0664f
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=eef47658f0d182f883bffd77b4531097
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllModbusHumCardFail"
+      Children:
+      - Name: Mode
+        Id: g=34448c8b06438bb5f5fc2afbb5ceaadf
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=e4a15124dec1bdfb0cec5def4840c3a8
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=925dec00a3eaeb04b2d75156fd5895b4
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A080"}
+- Name: 'A081A ErroreComm.ModbusScheda#2Temp'
+  Id: g=efa2c53af7aaf7f2d64133acdc1f3bd8
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=681d0d3b9f33a1118a50eb0a8bd77b71
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=377b9d1741386e4bb9cdc351c6da18b9
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=7272c759836583612e34643a8df36e29
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllModbusDryerCard_2Fail"
+      Children:
+      - Name: Mode
+        Id: g=9feedd4c480f47e6fcfb5bc1d721981a
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=ec3dd9da16aaaa53290bb94611e783cb
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=c76f370e7b931bb249f8cdc300432803
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A081A"}
+- Name: 'A081B ErroreComm.ModbusScheda#3Temp'
+  Id: g=92d479472bf2fcc925738404847b741b
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=5adb2f66fc6b153dd9a6657a530f28c3
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=cb7e5df75906235632997473972ad2f9
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=fc94b40566e8ec0f29ae357cdc1c9032
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllModbusDryerCard_3Fail"
+      Children:
+      - Name: Mode
+        Id: g=69e83425e77e104b714e78b63551e4df
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=eda10eb7d97cd2affc10ceef783533cd
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=e031976a9e457fbfd9a520fc5821147c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A081B"}
+- Name: A123AErroreApert.ValvolaVSCE1Atmos.
+  Id: g=fe9e947755ea0a55f2d8310ac0000ffd
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=42313c453cda4dc08e860aea6b1a8aa0
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=25f963cbd9f2c762a865bfd4dd199225
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=f7e605aa04d1bf29e6bd21924e8c0fc7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllVsce1OpenToAtmTimeTooLong"
+      Children:
+      - Name: Mode
+        Id: g=5ff9992a6b18c607541cc48f359c6f7f
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=8413d788020fdd466c84e07207a607d3
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=befd2c6d6ae4d2610a6c497bb314e877
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A123A"}
+- Name: A123BErroreApert.ValvolaVSCE1Essic.
+  Id: g=f79da027f85e0189930f2053b0329eba
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=3444493df7f7b7b9f4b0191c185f69a6
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=4639a9b52e238982ff78f7886e5cb61c
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=ce3845f5d5a98146067799307bf41e97
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllVsce1OpenToDryerTimeTooLong"
+      Children:
+      - Name: Mode
+        Id: g=93a372e598874779cca06c742e72fb38
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=be0bac62cb5fe538f38cdb2121564877
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=06bf697998c8b94310166fe070b5b859
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":30,"TextId":"A123B"}
