@@ -495,6 +495,48 @@ Children:
         - Name: /GradientTemperatureSet
           Type: StoreColumn
           DataType: Float
+    - Name: DataLoggerThermoGraphic
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: REAL_DOOR_LEFT_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_DOOR_RIGHT_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_PRESSURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_TEMPER_SET_FOR_GRAPH
+          Type: StoreColumn
+          DataType: Float
+        - Name: REAL_WOODCORE_1_TEMPERATURE
+          Type: StoreColumn
+          DataType: Float
+        - Name: TOTAL_WATER_DISCHARGED
+          Type: StoreColumn
+          DataType: Int16
   - Class: Reference
     Target: ns=25;i=30
     Direction: Forward
