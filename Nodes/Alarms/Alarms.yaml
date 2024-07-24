@@ -2,7 +2,7 @@ Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
 Children:
-- Name: A001PulsanteEmergenza
+- Name: A001
   Id: g=cdc5fcc04f91499eb6f01172ecd85cd0
   Type: OffNormalAlarmController
   Children:
@@ -55,7 +55,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A001"}
-- Name: A002PortaNonChiusa
+- Name: A002
   Id: g=07e6a1a05517c5ead3c8397110960663
   Type: OffNormalAlarmController
   Children:
@@ -108,7 +108,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A002"}
-- Name: A003ErroreComm.I_O
+- Name: A003
   Id: g=d115f283fad4b83812944ff1860e101c
   Type: OffNormalAlarmController
   Children:
@@ -161,7 +161,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A003"}
-- Name: A004ErroreTemp.PortaDx
+- Name: A004
   Id: g=6786c93c80e8f4d1926b3d55a621e545
   Type: OffNormalAlarmController
   Children:
@@ -214,7 +214,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A004"}
-- Name: A005ErroreTemp.PortaSx
+- Name: A005
   Id: g=d80b751f349b1dd8dbea0d1d5fb46be2
   Type: OffNormalAlarmController
   Children:
@@ -267,7 +267,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A005"}
-- Name: A006A AltaTemp.Term.PortaDx
+- Name: A006A
   Id: g=57ea4f7e11df308c9b33a496fdfeb478
   Type: OffNormalAlarmController
   Children:
@@ -320,7 +320,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A006A"}
-- Name: A006B AltaTemp.Term.PortaSx
+- Name: A006B
   Id: g=830d0e6196a78762ca667bb433adeece
   Type: OffNormalAlarmController
   Children:
@@ -373,7 +373,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A006B"}
-- Name: A007AltaTemp.SondaPortaDx
+- Name: A007
   Id: g=52a98b123fe51b9262d0c07fee0ce145
   Type: OffNormalAlarmController
   Children:
@@ -426,7 +426,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A007"}
-- Name: A008AltaTemp.SondaPortaSx
+- Name: A008
   Id: g=42348c0447eb393cc82ec31ca4e2e4d6
   Type: OffNormalAlarmController
   Children:
@@ -479,7 +479,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A008"}
-- Name: A009ErroreTemp.FondoDx
+- Name: A009
   Id: g=69d342b99302c71b7092a23a16461447
   Type: OffNormalAlarmController
   Children:
@@ -532,7 +532,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A009"}
-- Name: A010ErroreTemp.FondoSx
+- Name: A010
   Id: g=c3bd6fbe7e7185f8bc89fac1d3698e24
   Type: OffNormalAlarmController
   Children:
@@ -585,7 +585,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A010"}
-- Name: A011A AltaTemp.Term.FondoDx
+- Name: A011A
   Id: g=f0e1c46d70e77e30c8930d946754b92e
   Type: OffNormalAlarmController
   Children:
@@ -638,7 +638,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A011A"}
-- Name: A011B AltaTemp.Term.FondoSx
+- Name: A011B
   Id: g=7678db9affdf1905a9ee3c0730dac8b3
   Type: OffNormalAlarmController
   Children:
@@ -691,7 +691,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A011B"}
-- Name: A012AltaTemp.SondaFondoDx
+- Name: A012
   Id: g=07ea5a98729be7bb74b7f321aa580692
   Type: OffNormalAlarmController
   Children:
@@ -744,7 +744,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A012"}
-- Name: A013AltaTemp.SondaFondoDx
+- Name: A013
   Id: g=00002dbcac8ab184760611ccce2c5cb9
   Type: OffNormalAlarmController
   Children:
@@ -797,7 +797,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A013"}
-- Name: A014A  ErroreInvtVentVP1Porta
+- Name: A014A
   Id: g=207794a32ab6892aed4de07b91131809
   Type: OffNormalAlarmController
   Children:
@@ -849,8 +849,8 @@ Children:
     Id: g=93de7b33c8e3e258162fd9e016ebe4e5
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A013"}
-- Name: A015ImtVent.Porta
+    Value: {"LocaleId":"fr-FR","Text":"Errore Inverter Ventilatore VP1 Porta"}
+- Name: A015
   Id: g=89dd9770ac837ceb5b7a97679078a88d
   Type: OffNormalAlarmController
   Children:
@@ -903,7 +903,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A015"}
-- Name: A016A  ErroreInvtVentVP1Fondo
+- Name: A016A
   Id: g=d818114b0b98d35a8db996a62da29577
   Type: OffNormalAlarmController
   Children:
@@ -955,8 +955,8 @@ Children:
     Id: g=12fe9e9ac6f5745aa80e6957de49d5a4
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A013"}
-- Name: A017ImtVent.Fondo
+    Value: {"LocaleId":"fr-FR","Text":"Errore Inverter Ventilatore VP1 Fondo"}
+- Name: A017
   Id: g=f37ccde710f6cb070848bde3428079fa
   Type: OffNormalAlarmController
   Children:
@@ -1009,7 +1009,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A017"}
-- Name: A018Rott.Trasm.Vuoto
+- Name: A018
   Id: g=314980eac1c9d7bfa3c7b5f98c7fee61
   Type: OffNormalAlarmController
   Children:
@@ -1062,7 +1062,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A018"}
-- Name: A019ImtPompaVuoto
+- Name: A019
   Id: g=6274fea7de4edad218c950c07aca56fa
   Type: OffNormalAlarmController
   Children:
@@ -1115,7 +1115,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A019"}
-- Name: A020A1ImtVent.VC1
+- Name: A020A1
   Id: g=31883e994a27413a26e28d2474d0203c
   Type: OffNormalAlarmController
   Children:
@@ -1168,7 +1168,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A020"}
-- Name: A020A2ImtVent.VC2
+- Name: A020A2
   Id: g=c4f5c6aab0cc59d3f7331eee37b5c36d
   Type: OffNormalAlarmController
   Children:
@@ -1221,7 +1221,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A020"}
-- Name: A022 ImtPompaTorreRaff.
+- Name: A022
   Id: g=e13195883ed870ba1bf5f9758b8ff823
   Type: OffNormalAlarmController
   Children:
@@ -1273,8 +1273,8 @@ Children:
     Id: g=fc57e33262d37e5e98ae036c4686874a
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A020"}
-- Name: A023 ImtVent.TorreRaff.
+    Value: {"LocaleId":"fr-FR","Text":"Imt Pompa Torre Raffreddamento"}
+- Name: A023
   Id: g=5d99e8a0abda320316fbb5479ee7dadd
   Type: OffNormalAlarmController
   Children:
@@ -1326,8 +1326,8 @@ Children:
     Id: g=d162c2eb899d18cec6d94c6b53c8f8a3
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A020"}
-- Name: A024 ImtRes.TorreRaff.
+    Value: {"LocaleId":"fr-FR","Text":"Imt Ventilatore Torre Raffreddamento"}
+- Name: A024
   Id: g=9dde3662b3b30508a47d4b05012be9d7
   Type: OffNormalAlarmController
   Children:
@@ -1379,8 +1379,8 @@ Children:
     Id: g=f52f89605b11744f3aabea2a8e42b46a
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A020"}
-- Name: A025ErroreTemp.Cond.
+    Value: {"LocaleId":"fr-FR","Text":"Imt Resistenza Torre Raffreddamento"}
+- Name: A025
   Id: g=eaa91ab4abea00f706f82a30f442a425
   Type: OffNormalAlarmController
   Children:
@@ -1433,7 +1433,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A025"}
-- Name: A026ErroreTemp.TorreRaff.
+- Name: A026
   Id: g=63f610684bc0a3edfa0a46338037641f
   Type: OffNormalAlarmController
   Children:
@@ -1485,8 +1485,8 @@ Children:
     Id: g=a1f25826cd3ac8c53bbec3fb3e6a97a1
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A025"}
-- Name: A028BassoLivelloTorreRaff.
+    Value: {"LocaleId":"fr-FR","Text":"Errore Temperatura Torre Raffreddamento"}
+- Name: A028
   Id: g=231147f757d717717bd48f4f0036864f
   Type: OffNormalAlarmController
   Children:
@@ -1538,8 +1538,8 @@ Children:
     Id: g=02483a7489b37e584d3218723b5dc08d
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A025"}
-- Name: A040AltaTemp.InEss
+    Value: {"LocaleId":"fr-FR","Text":"Basso Livello Torre Raffreddamento"}
+- Name: A040
   Id: g=ba04685517484b244a2441f1c608a278
   Type: OffNormalAlarmController
   Children:
@@ -1592,7 +1592,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A040"}
-- Name: A041BassaPress.inEss
+- Name: A041
   Id: g=4a742a11c2fadb4ebf9400498b2b0b7c
   Type: OffNormalAlarmController
   Children:
@@ -1645,7 +1645,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A047ErroreTemp.CuoreLegno
+- Name: A047
   Id: g=44032a4ba68c0de4d0fda0ee9e4f88bf
   Type: OffNormalAlarmController
   Children:
@@ -1697,8 +1697,8 @@ Children:
     Id: g=8edfcfb52bad372760807d079d3706f7
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A050ImtPompaGlycol
+    Value: {"LocaleId":"fr-FR","Text":"Errore Temperatura Cuore Legno"}
+- Name: A050
   Id: g=a7b933f30e2558b7f0262b34f70afeec
   Type: OffNormalAlarmController
   Children:
@@ -1750,8 +1750,8 @@ Children:
     Id: g=49aadb823f79c5e8a4ea70c45d5b9e82
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A051ImtVentGlicol
+    Value: {"LocaleId":"fr-FR","Text":"Imt Pompa Glycol"}
+- Name: A051
   Id: g=a9bd5669d86dec08bc66d521c2bcc746
   Type: OffNormalAlarmController
   Children:
@@ -1803,8 +1803,8 @@ Children:
     Id: g=9907acbdca0fdb65fd650c85c8fe3659
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A052ImtPompaSerb.Vuoto
+    Value: {"LocaleId":"fr-FR","Text":"Imt Ventialtore Glicol"}
+- Name: A052
   Id: g=a2f329db6e52316ca2ade2609705a27f
   Type: OffNormalAlarmController
   Children:
@@ -1856,8 +1856,8 @@ Children:
     Id: g=e9542f2b9c04353e4062383c1f622eee
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A053ImtVent.PompaVuoto
+    Value: {"LocaleId":"fr-FR","Text":"Imt Pompa Serbatoio Vuoto"}
+- Name: A053
   Id: g=efc8d6a3dda374b3603e99d8bee55226
   Type: OffNormalAlarmController
   Children:
@@ -1909,8 +1909,8 @@ Children:
     Id: g=cf3113e6194742d3c1247947364c86b2
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A054AImtVent.Raff.VRE1
+    Value: {"LocaleId":"fr-FR","Text":"Imt Ventilatore Pompa Vuoto"}
+- Name: A054A
   Id: g=a3efa5385bbb17512c46473a9bfc00f8
   Type: OffNormalAlarmController
   Children:
@@ -1962,8 +1962,8 @@ Children:
     Id: g=1c74442c555813e340bbd4ed34af5036
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A057ErroreTens.Aliment.
+    Value: {"LocaleId":"fr-FR","Text":"Imt Ventilatore Raffreddamento essiccatoio VRE1"}
+- Name: A057
   Id: g=bdfa3c999ce9e061d0730ff2393fa2f0
   Type: OffNormalAlarmController
   Children:
@@ -2015,8 +2015,8 @@ Children:
     Id: g=618a08cd89c7e029339f16354ead2065
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A058ErroreAlim.Comandi
+    Value: {"LocaleId":"fr-FR","Text":"Errore Tensione Alimentazione"}
+- Name: A058
   Id: g=f1fb24a599e20514d500dc407fd3705e
   Type: OffNormalAlarmController
   Children:
@@ -2033,7 +2033,7 @@ Children:
       Id: g=aac141809a8ed8a987e48ea53a3563de
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllCommandPowerFailure"
+      Value: "../../../CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/MkAllCommandPower24dcFailure"
       Children:
       - Name: Mode
         Id: g=788cdfdc355cc54aeeddd6ef90b20e95
@@ -2068,8 +2068,8 @@ Children:
     Id: g=541c016adaab6934b0cfe4297027c6fa
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A059A ErroreUPS1
+    Value: {"LocaleId":"fr-FR","Text":"Errore Alimentazione Comandi"}
+- Name: A059A
   Id: g=0e836a59fcedd97fe37f7d0e6e14dd14
   Type: OffNormalAlarmController
   Children:
@@ -2121,8 +2121,8 @@ Children:
     Id: g=c3608d2984e9fde26326a71fe9a2b8d8
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A059B ErroreUPS2
+    Value: {"LocaleId":"fr-FR","Text":"Errore UPS1"}
+- Name: A059B
   Id: g=6128f35b7b701746b7d4aad08b92de06
   Type: OffNormalAlarmController
   Children:
@@ -2174,8 +2174,8 @@ Children:
     Id: g=3a63ea9c9433824d6e1d561420b2e874
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A060A AltaTemp.QE
+    Value: {"LocaleId":"fr-FR","Text":"Errore UPS2"}
+- Name: A060A
   Id: g=ce9c516d73942c1edf13942b4e5db62c
   Type: OffNormalAlarmController
   Children:
@@ -2227,8 +2227,8 @@ Children:
     Id: g=8f8d1e2d86633912036f1c5708eb53cf
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A060B AltaTemp.Term.QE
+    Value: {"LocaleId":"fr-FR","Text":"Alta Temperatura QE"}
+- Name: A060B
   Id: g=1796e9b0ff4630e12e9616fad06d5acb
   Type: OffNormalAlarmController
   Children:
@@ -2280,8 +2280,8 @@ Children:
     Id: g=13fbc2d82b5d03d7b7ef6672a51b53cd
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A061 ErroreTemp.Glycol
+    Value: {"LocaleId":"fr-FR","Text":"Alta Temperatura Termostato QE"}
+- Name: A061
   Id: g=6b3f540e6814d8e72bfdcf1c97af2978
   Type: OffNormalAlarmController
   Children:
@@ -2333,8 +2333,8 @@ Children:
     Id: g=a59df33c89b82f7484d62e799d988960
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A062 ErroreTemp.Serb.Vuoto
+    Value: {"LocaleId":"fr-FR","Text":"Errore Temperatura Glycol"}
+- Name: A062
   Id: g=496bd9605dd1057792d64e170413d716
   Type: OffNormalAlarmController
   Children:
@@ -2386,8 +2386,8 @@ Children:
     Id: g=0a5c178ffc2fb438996919efdc149c26
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A063A ErroreTemp.Cusc.Vent.VP1
+    Value: {"LocaleId":"fr-FR","Text":"Errore Temperatura Serbatoio Vuoto"}
+- Name: A063A
   Id: g=2ff00528dbeee27968d2fc50bf7d7dd4
   Type: OffNormalAlarmController
   Children:
@@ -2439,8 +2439,8 @@ Children:
     Id: g=178d59dd73893f9ab251083d9d635c9e
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A064A ErroreTemp.Cusc.Vent.VF1
+    Value: {"LocaleId":"fr-FR","Text":"Errore Temperatura Cuscuscinetto Vent. VP1"}
+- Name: A064A
   Id: g=1054ee9caebe5231963ed818e78e4ec7
   Type: OffNormalAlarmController
   Children:
@@ -2492,8 +2492,8 @@ Children:
     Id: g=02f3c509e4492fd758050906349fa774
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A065 LivelloSerb.GlycolBasso
+    Value: {"LocaleId":"fr-FR","Text":"Errore Temperatura Cuscuscinetto Vent. VF1"}
+- Name: A065
   Id: g=63b896c75c891684f2d2a44d0fb21d5a
   Type: OffNormalAlarmController
   Children:
@@ -2545,8 +2545,8 @@ Children:
     Id: g=3fae9cdbd71b9d5180b550fa90d1875f
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A066 LivelloSerb.GlycolTroppoBasso
+    Value: {"LocaleId":"fr-FR","Text":"Livello Serbatoio Glycol Basso"}
+- Name: A066
   Id: g=c30a7c61bbb3e7727d419517de48479b
   Type: OffNormalAlarmController
   Children:
@@ -2598,8 +2598,8 @@ Children:
     Id: g=8b50a7ada403b9a2f923919aeee1f341
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: 'A067APA Flussost.PortaVP1Blocc. '
+    Value: {"LocaleId":"fr-FR","Text":"Livello Serbatoi Glycol Troppo Basso"}
+- Name: A067APA
   Id: g=10ae82c6359bc1173b68fa1722098389
   Type: OffNormalAlarmController
   Children:
@@ -2651,8 +2651,8 @@ Children:
     Id: g=4f9e39a5f130dd3702bfd1de24b58fca
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: 'A067AFA Flussost.FondoVF1Blocc. '
+    Value: {"LocaleId":"fr-FR","Text":"Flussostato Porta VP1 Bloccato "}
+- Name: A067AFA
   Id: g=f311a6f52fe8750ce2a307ef2b138ed9
   Type: OffNormalAlarmController
   Children:
@@ -2704,8 +2704,8 @@ Children:
     Id: g=056ca8797bf4b82793541576930ac75c
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A067PA BassaPress.CircuitoGlicolPortaVP1
+    Value: {"LocaleId":"fr-FR","Text":"Flussostato Fondo VF1 Bloccato "}
+- Name: A067PA
   Id: g=8e194ff85f7488889164d63ed73cb15a
   Type: OffNormalAlarmController
   Children:
@@ -2757,8 +2757,8 @@ Children:
     Id: g=c118c1b8a15cfd6891f71c18e84962eb
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A067FA BassaPress.CircuitoGlicolFondoVF1
+    Value: {"LocaleId":"fr-FR","Text":"Bassa Pressione Circuito Glicol Porta VP1"}
+- Name: A067FA
   Id: g=b42f2a19dfb8437109a56a5f75a098ef
   Type: OffNormalAlarmController
   Children:
@@ -2810,8 +2810,8 @@ Children:
     Id: g=b549c50cc012294d508626279a8b3103
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A041"}
-- Name: A068 BassaPress.Azoto
+    Value: {"LocaleId":"fr-FR","Text":"Bassa Pressione Circuito Glicol Fondo VF1"}
+- Name: A068
   Id: g=99924408e8c86d2a6165c6be9b832cd3
   Type: OffNormalAlarmController
   Children:
@@ -2863,8 +2863,8 @@ Children:
     Id: g=244369f1355440bbda422737245c42c6
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A069 BassissimaPress.Azoto
+    Value: {"LocaleId":"fr-FR","Text":"Bassa Pressione Azoto"}
+- Name: A069
   Id: g=385b8d9dde10fee6ba32251ea6ed77ca
   Type: OffNormalAlarmController
   Children:
@@ -2916,8 +2916,8 @@ Children:
     Id: g=7af71cf0d3ae4c650d71fe824117a74e
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A070 BassaPress.AriaCompressa
+    Value: {"LocaleId":"fr-FR","Text":"Bassissima Pressione Azoto"}
+- Name: A070
   Id: g=b64efc3a5a7b42fbecd90bd7ae68a61a
   Type: OffNormalAlarmController
   Children:
@@ -2969,8 +2969,8 @@ Children:
     Id: g=aade2fb4f52ea9b9af75914d1be9da5e
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A071 TempoRiempim.Serb.VuotoTroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Bassa Pressione Aria Compressa"}
+- Name: A071
   Id: g=41ac4f2ea20d7b76db6cd6dd2e1b4fd8
   Type: OffNormalAlarmController
   Children:
@@ -3022,8 +3022,8 @@ Children:
     Id: g=d33db1f4888dc1c53bfee3787fa65ee5
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A072 TempoSvuotam.Serb.VuotoTroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Riempim. Serb. Vuoto Troppo Lungo"}
+- Name: A072
   Id: g=233f8430672bd0209d9cad1e0d26401d
   Type: OffNormalAlarmController
   Children:
@@ -3075,8 +3075,8 @@ Children:
     Id: g=32cef7f3c340547e673e531a5d6320e3
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A073 TempoSvuotam.PompaAriaCond.TroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Svuotam. Serb. Vuoto Troppo Lungo"}
+- Name: A073
   Id: g=3a29b56e2083706181c54be95b98c950
   Type: OffNormalAlarmController
   Children:
@@ -3128,8 +3128,8 @@ Children:
     Id: g=4bb321c09d0a72362adaa2410e629857
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A076 AltaPress.EssiccatoioInertiz.
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Svuotam. Pompa Aria Cond. Troppo Lungo"}
+- Name: A076
   Id: g=6b68027614e9b2ea051863dae94d07c7
   Type: OffNormalAlarmController
   Children:
@@ -3181,8 +3181,8 @@ Children:
     Id: g=787da28f0c354d5a419d46d7c502dbf2
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A078 AltaTemp.EssiccatoioInertiz.
+    Value: {"LocaleId":"fr-FR","Text":"Alta Press. Essiccatoio Inertiz."}
+- Name: A078
   Id: g=eb3d5df07ce702e77a2911ef8076592a
   Type: OffNormalAlarmController
   Children:
@@ -3234,8 +3234,8 @@ Children:
     Id: g=0803ef25fe5bc5e7054397faf4f2fc64
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A079 ErroreTrasmet.Azoto
+    Value: {"LocaleId":"fr-FR","Text":"Alta Temp. Essiccatoio Inertiz."}
+- Name: A079
   Id: g=c03da6a8a8f546ebfda6ec33a44b17c9
   Type: OffNormalAlarmController
   Children:
@@ -3287,8 +3287,8 @@ Children:
     Id: g=4557df17927d734623ef9359449d3b51
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: 'A080ErroreComm.ModbusScheda#1Umid.'
+    Value: {"LocaleId":"fr-FR","Text":"Errore Trasmettitore Azoto"}
+- Name: A080
   Id: g=daca4a34aa7db75a8ec2112a6c95722e
   Type: OffNormalAlarmController
   Children:
@@ -3341,7 +3341,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A080"}
-- Name: 'A081A ErroreComm.ModbusScheda#2Temp'
+- Name: A081A
   Id: g=efa2c53af7aaf7f2d64133acdc1f3bd8
   Type: OffNormalAlarmController
   Children:
@@ -3394,7 +3394,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A081A"}
-- Name: 'A081B ErroreComm.ModbusScheda#3Temp'
+- Name: A081B
   Id: g=92d479472bf2fcc925738404847b741b
   Type: OffNormalAlarmController
   Children:
@@ -3447,7 +3447,7 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":30,"TextId":"A081B"}
-- Name: 'A081C ErroreComm.ModbusScheda#4Temp'
+- Name: A081C
   Id: g=6d12bc53d1252a5117c307d96b8cb0b7
   Type: OffNormalAlarmController
   Children:
@@ -3499,8 +3499,8 @@ Children:
     Id: g=fd3d57813d24badca3669cfd3dcc810d
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: 'A085 ErroreComm.ModbusScheda#10'
+    Value: {"LocaleId":"fr-FR","Text":"Errore Comm. Modbus Scheda #4 Temp"}
+- Name: A085
   Id: g=edac299b94497d388e66b72ced4e0364
   Type: OffNormalAlarmController
   Children:
@@ -3552,8 +3552,8 @@ Children:
     Id: g=68b15418d762e988b3d6304e1ea690e5
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: 'A090 ErroreComm.ModbusScheda#9Peso'
+    Value: {"LocaleId":"fr-FR","Text":"Errore Comm. Modbus Scheda #10"}
+- Name: A090
   Id: g=45f7cb39237bcd4110c4542397133e4a
   Type: OffNormalAlarmController
   Children:
@@ -3605,8 +3605,8 @@ Children:
     Id: g=7ba8ac7c92f0bffaab9afefa85954137
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: 'A090A ErroreComm.ModbusScheda#11Temp'
+    Value: {"LocaleId":"fr-FR","Text":"Errore Comm. Modbus Scheda #9 Peso"}
+- Name: A090A
   Id: g=fe9e947755ea0a55f2d8310ac0000ffd
   Type: OffNormalAlarmController
   Children:
@@ -3658,8 +3658,8 @@ Children:
     Id: g=befd2c6d6ae4d2610a6c497bb314e877
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123A"}
-- Name: 'A090B ErroreComm.ModbusScheda#12Temp'
+    Value: {"LocaleId":"fr-FR","Text":"Errore Comm. Modbus Scheda #11Temp"}
+- Name: A090B
   Id: g=f79da027f85e0189930f2053b0329eba
   Type: OffNormalAlarmController
   Children:
@@ -3711,8 +3711,8 @@ Children:
     Id: g=06bf697998c8b94310166fe070b5b859
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A130A1 TempoAperturaVSA1TroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Errore Comm. Modbus Scheda #12 Temp"}
+- Name: A130A1
   Id: g=b02cef6792b61e215e703855af4b9d26
   Type: OffNormalAlarmController
   Children:
@@ -3764,8 +3764,8 @@ Children:
     Id: g=ac7ac5eafd562590bdf5b72c8e6ce4c1
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A130C1 TempoChiusuraVSA1TroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Apertura VSA1 Troppo Lungo"}
+- Name: A130C1
   Id: g=44b187be0cc734ec381cb6e5c1584a5b
   Type: OffNormalAlarmController
   Children:
@@ -3817,8 +3817,8 @@ Children:
     Id: g=29469a29109665e6b4651c878b9f8aa5
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A131A1 TempoAperturaVSETroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Chiusura VSA1 Troppo Lungo"}
+- Name: A131A1
   Id: g=1e5dc3e1d15cff5ac8dafc5516916c0c
   Type: OffNormalAlarmController
   Children:
@@ -3870,8 +3870,8 @@ Children:
     Id: g=a05afb1c3b55ac51aff29ff9c802e422
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A131C1 TempoChiusuraVSETroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Apertura VSE Troppo Lungo"}
+- Name: A131C1
   Id: g=67ccde65c5bd337dfc77396cdb46b582
   Type: OffNormalAlarmController
   Children:
@@ -3923,8 +3923,8 @@ Children:
     Id: g=77322160b197bd135f8edd129addbd4e
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A132A TempoAperturaVPVTroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Chiusura VSE Troppo Lungo"}
+- Name: A132A
   Id: g=f734d822a5545ce274981c21d2668f50
   Type: OffNormalAlarmController
   Children:
@@ -3976,8 +3976,8 @@ Children:
     Id: g=e997ba33ec7ab2add88f9d4c1c2ca4e5
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A132C TempoChiusuraVPVTroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Apertura VPV Troppo Lungo"}
+- Name: A132C
   Id: g=6c6963609e4c86f03120fb6e7d1eaa84
   Type: OffNormalAlarmController
   Children:
@@ -4029,8 +4029,8 @@ Children:
     Id: g=dc90c6cf186ae2a939b0bc61f1b11241
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A133A1 TempoAperturaVPETroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Chiusura VPV Troppo Lungo"}
+- Name: A133A1
   Id: g=9ba8c6bc4cc6e39c8eea1e5f9b91d35d
   Type: OffNormalAlarmController
   Children:
@@ -4082,8 +4082,8 @@ Children:
     Id: g=40a4a3d7fa031d18cdee3eebd2952a97
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A133C1 TempoChiusuraVPETroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Apertura VPE Troppo Lungo"}
+- Name: A133C1
   Id: g=747aa2c9fcf2c9fd1db3a261d45ffe23
   Type: OffNormalAlarmController
   Children:
@@ -4135,8 +4135,8 @@ Children:
     Id: g=233b53810c2f34ae5f8e032e55faf9ef
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A134A TempoAperturaVEETroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Chiusura VPE Troppo Lungo"}
+- Name: A134A
   Id: g=964fda49487acb64bb4fac7420d47a8c
   Type: OffNormalAlarmController
   Children:
@@ -4188,8 +4188,8 @@ Children:
     Id: g=a56d27395e24c686ffe859aa2147f6eb
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A134C TempoChiusuraVEETroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Apertura VEE Troppo Lungo"}
+- Name: 'A134C '
   Id: g=d351d550adf2e0034cfee9cba8b6f33d
   Type: OffNormalAlarmController
   Children:
@@ -4241,8 +4241,8 @@ Children:
     Id: g=5b2d5238d24bfda40c9a437a1fbd2c0a
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A135A TempoAperturaVETTroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Chiusura VEE Troppo Lungo"}
+- Name: 'A135A '
   Id: g=86307b385f360a9e7cd01196eb2ff2b5
   Type: OffNormalAlarmController
   Children:
@@ -4294,8 +4294,8 @@ Children:
     Id: g=a32c7cf0801a7b1d123ef438f6fd13aa
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A135C TempoChiusuraVETTroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Apertura VET Troppo Lungo"}
+- Name: A135C
   Id: g=9d8d806474ae7417cdffbac328656dba
   Type: OffNormalAlarmController
   Children:
@@ -4347,8 +4347,8 @@ Children:
     Id: g=8ad450642b85ba0d9d6034e317dd79d3
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A136A TempoAperturaVLTroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Chiusura VET Troppo Lungo"}
+- Name: A136A
   Id: g=896556980abd99a809e55a6f9395528b
   Type: OffNormalAlarmController
   Children:
@@ -4400,8 +4400,8 @@ Children:
     Id: g=2572a9df89a5bf290239a4bbda53d00e
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A136C TempoChiusuraVLTroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Apertura VL Troppo Lungo"}
+- Name: A136C
   Id: g=07196fb183dcb1859c34fb8826c1153c
   Type: OffNormalAlarmController
   Children:
@@ -4453,8 +4453,8 @@ Children:
     Id: g=85fde02d8688ed39afc02815b0af2978
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A137A TempoAperturaVWE1TroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Chiusura VL Troppo Lungo"}
+- Name: A137A
   Id: g=8ac996aa3c17d43afa0031d7649a70f2
   Type: OffNormalAlarmController
   Children:
@@ -4506,8 +4506,8 @@ Children:
     Id: g=38e800049dc4e1e19262d06a616bfe58
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A137C TempoChiusuraVWE1TroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Apertura VWE1 Troppo Lungo"}
+- Name: A137C
   Id: g=ecade139bd25501d5fecc39160843170
   Type: OffNormalAlarmController
   Children:
@@ -4559,8 +4559,8 @@ Children:
     Id: g=f9d24851ec453477c7783dbc1649a044
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A138A TempoAperturaVWE2TroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Chiusura VWE1 Troppo Lungo"}
+- Name: A138A
   Id: g=41ea8a84a41c91f7482f8710845b8a3a
   Type: OffNormalAlarmController
   Children:
@@ -4612,8 +4612,8 @@ Children:
     Id: g=b6d7fa7c3a8942a6a781e9010a6a6fd0
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A138C TempoChiusuraVWE2TroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Apertura VWE2 Troppo Lungo"}
+- Name: A138C
   Id: g=b9baeb21f51d68d4923240f55478ec3b
   Type: OffNormalAlarmController
   Children:
@@ -4665,8 +4665,8 @@ Children:
     Id: g=a416dfee9c9bcec0efa8151eb208b70d
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A139A TempoAperturaVEATroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Chiusura VWE2 Troppo Lungo"}
+- Name: A139A
   Id: g=4ba10f236d921e2d0b2ae420142ad625
   Type: OffNormalAlarmController
   Children:
@@ -4718,8 +4718,8 @@ Children:
     Id: g=3e4f8b8a528b39fc3b92db4a9fad12c2
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
-- Name: A139C TempoChiusuraVEATroppoLungo
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Apertura VEA Troppo Lungo"}
+- Name: A139C
   Id: g=4e98678d069d309b1e4d425ee3c2228b
   Type: OffNormalAlarmController
   Children:
@@ -4771,4 +4771,4 @@ Children:
     Id: g=b78f8ffd2fdb6b3be1fa544fa1f1fa34
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"NamespaceIndex":30,"TextId":"A123B"}
+    Value: {"LocaleId":"fr-FR","Text":"Tempo Chiusura VEA Troppo Lungo"}
