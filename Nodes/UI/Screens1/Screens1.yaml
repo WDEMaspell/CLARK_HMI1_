@@ -18321,7 +18321,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/PnlCmdAcknowlEssCycleEnd"
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/PnlCmdAcknowlTvsCycleEnd"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -18351,7 +18351,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssCycleEnd"
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/MkTvsCycleEnd"
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -18383,7 +18383,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/PnlCmdConfirmEssCycleStop"
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/PnlCmdConfirmTvsCycleStop"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -18428,7 +18428,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssStopOn"
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/MkTvsStopOn"
     - Name: MinHoldTime
       Type: BaseDataVariableType
       DataType: Duration

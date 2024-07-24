@@ -152,14 +152,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.CondenserWaterTypeTemperSet"
-    - Name: CONTROL_VOLTAGE_CHECK_RELE
-      Type: CODESYSTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "Application.GVL.CONTROL_VOLTAGE_CHECK_RELE"
     - Name: Cooling_Temperature_Set
       Type: CODESYSTag
       DataType: Int16
@@ -1116,14 +1108,22 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllClosedDoorLimSw"
-    - Name: MkAllCommandPowerFailure
+    - Name: MkAllCommandPower120acFailure
       Type: CODESYSTag
       DataType: Boolean
       Children:
       - Name: SymbolName
         Type: BaseDataVariableType
         DataType: String
-        Value: "Application.GVL.MkAllCommandPowerFailure"
+        Value: "Application.GVL.MkAllCommandPower120acFailure"
+    - Name: MkAllCommandPower24dcFailure
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllCommandPower24dcFailure"
     - Name: MkAllCommTcpSioFail
       Type: CODESYSTag
       DataType: Boolean
@@ -1180,6 +1180,14 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllCoolingTowerHeaterImtd"
+    - Name: MkAllCoolingTowerLowLevel
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllCoolingTowerLowLevel"
     - Name: MkAllCoolingTowerPumpImt
       Type: CODESYSTag
       DataType: Boolean
@@ -1284,6 +1292,14 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllElectricalCabinetHighTemper"
+    - Name: MkAllElectricalCabinetThermostatHighTemper
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllElectricalCabinetThermostatHighTemper"
     - Name: MkAllEmergencyButton
       Type: CODESYSTag
       DataType: Boolean
@@ -1460,6 +1476,14 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllModbusPowerCounterFail"
+    - Name: MkAllModbusScaleAirPumpFail
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllModbusScaleAirPumpFail"
     - Name: MkAllModbusScaleFail
       Type: CODESYSTag
       DataType: Boolean
@@ -1676,6 +1700,22 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllThermostDoorRightHighTemper"
+    - Name: MkAllUps1DcOutLowVoltage
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllUps1DcOutLowVoltage"
+    - Name: MkAllUps1DcOutVeryLowVoltage
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllUps1DcOutVeryLowVoltage"
     - Name: MkAllUps1Failure
       Type: CODESYSTag
       DataType: Boolean
@@ -1684,6 +1724,22 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.MkAllUps1Failure"
+    - Name: MkAllUps2DcOutLowVoltage
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllUps2DcOutLowVoltage"
+    - Name: MkAllUps2DcOutVeryLowVoltage
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL.MkAllUps2DcOutVeryLowVoltage"
     - Name: MkAllUps2Failure
       Type: CODESYSTag
       DataType: Boolean
