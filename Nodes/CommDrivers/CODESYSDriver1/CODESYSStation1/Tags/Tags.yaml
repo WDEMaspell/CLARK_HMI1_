@@ -3254,10 +3254,12 @@ Children:
         DataType: String
         Value: "Application.GVL.WOOD_THICKNESS"
     - Name: WOOD_TYPE
+      Id: g=a6ca224ea3d0d5089f206a01db916890
       Type: CODESYSTag
       DataType: String
       Children:
       - Name: SymbolName
+        Id: g=6ad11ce1e432ad980e0083dbab71e797
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL.WOOD_TYPE"
@@ -4130,6 +4132,30 @@ Children:
       }
      }
     Children:
+    - Name: MkGradientSet1On
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkGradientSet1On"
+    - Name: MkGradientSet2On
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkGradientSet2On"
+    - Name: MkGradientSet3On
+      Type: CODESYSTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.MkGradientSet3On"
     - Name: MkTvsActFileDatiCycleHmi
       Type: CODESYSTag
       DataType: Boolean
@@ -4468,6 +4494,22 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Application.GVL_TVS.TvsGradientTemperatureSet"
+    - Name: TvsGradientTemperatureSet2
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsGradientTemperatureSet2"
+    - Name: TvsGradientTemperatureSet3
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsGradientTemperatureSet3"
     - Name: TvsPh1_Pressure_Set
       Type: CODESYSTag
       DataType: Int16
@@ -4840,6 +4882,30 @@ Children:
       - Name: Encoding
         Type: BaseDataVariableType
         DataType: Encoding
+    - Name: TvsWoodStartingTemperatureSet
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsWoodStartingTemperatureSet"
+    - Name: TvsWoodStartingTemperatureSet2
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsWoodStartingTemperatureSet2"
+    - Name: TvsWoodStartingTemperatureSet3
+      Type: CODESYSTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Application.GVL_TVS.TvsWoodStartingTemperatureSet3"
   - Name: GVL_VAPORIZER
     Type: TagStructure
     DataType: Structure

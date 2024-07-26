@@ -877,6 +877,36 @@ Children:
                       ReferenceType: HasParameter
                       ModellingRule: Optional
                       Value: "If(/Objects/NewHMIProject1/Model/Cycle/Start)"
+        - Name: Humidity Prog
+          Type: NavigationPanelItem
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Panel
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/CLARK_HMI1_/UI/Screens1/HumidityDryingProgram"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: TVS Prog
+          Type: NavigationPanelItem
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Panel
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/CLARK_HMI1_/UI/Screens1/ThermoProgram"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
         - Name: DryingGraphic
           Type: NavigationPanelItem
           Children:
@@ -909,6 +939,21 @@ Children:
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: TVS Graphic
+          Type: NavigationPanelItem
+          Children:
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Panel
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/CLARK_HMI1_/UI/Screens1/ThermoGraphic"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
         - Name: Alarms
           Type: NavigationPanelItem
           Children:
@@ -925,22 +970,7 @@ Children:
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-        - Name: Panel1
-          Type: NavigationPanelItem
-          Children:
-          - Name: Title
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-          - Name: Panel
-            Type: NodePointer
-            DataType: NodeId
-            Value: "/Objects/CLARK_HMI1_/UI/Screens1/HumidityDryingProgram"
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-        - Name: Panel4
+        - Name: Parameters
           Type: NavigationPanelItem
           Children:
           - Name: Title
@@ -955,7 +985,7 @@ Children:
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-        - Name: Panel2
+        - Name: Ricette
           Type: NavigationPanelItem
           Children:
           - Name: Title
@@ -970,7 +1000,7 @@ Children:
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-        - Name: Panel3
+        - Name: Data Logger
           Type: NavigationPanelItem
           Children:
           - Name: Title

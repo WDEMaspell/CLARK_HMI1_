@@ -16029,43 +16029,6 @@ Children:
       DataType: FontWeightEnum
       ModellingRule: Optional
       Value: 400
-  - Name: TextBox2
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/WOOD_TYPE"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 85.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 65.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 8.0
-    - Name: TextHorizontalAlignment
-      Type: BaseVariableType
-      DataType: TextHorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
   - Name: Label17
     Type: Label
     Children:
@@ -16401,22 +16364,8 @@ Children:
       DataType: Boolean
       Value: true
   - Name: PH1
-    Type: ToggleButton
+    Type: Button
     Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/PnlComEssPh1_On"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -16443,40 +16392,42 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssPh1_On"
+            Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/MkTvsPh1_On"
         - Name: ns=3;Pairs
           Type: BaseObjectType
+          ModellingRule: None
           Children:
           - Name: Pair
             Type: ValueMapPair
+            ModellingRule: None
             Children:
             - Name: Key
               Type: BaseDataVariableType
               DataType: UInt32
+              ModellingRule: None
             - Name: Value
               Type: BaseDataVariableType
               DataType: Color
-              Value: "#f0f0f0"
+              ModellingRule: None
+              Value: "#e4e4e4"
           - Name: Pair1
             Type: ValueMapPair
+            ModellingRule: None
             Children:
             - Name: Key
               Type: BaseDataVariableType
               DataType: UInt32
+              ModellingRule: None
               Value: 1
             - Name: Value
               Type: BaseDataVariableType
               DataType: Color
+              ModellingRule: None
               Value: "#00ff3f"
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssDryingOn"
     - Name: Opacity
       Type: BaseVariableType
       DataType: Float
@@ -16485,7 +16436,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 270.0
+      Value: 290.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -16502,22 +16453,8 @@ Children:
       ModellingRule: Optional
       Value: 40.0
   - Name: PH2
-    Type: ToggleButton
+    Type: Button
     Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/PnlComEssPh2_On"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -16544,45 +16481,47 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssPh2_On"
+            Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/MkTvsPh2_On"
         - Name: ns=3;Pairs
           Type: BaseObjectType
+          ModellingRule: None
           Children:
           - Name: Pair
             Type: ValueMapPair
+            ModellingRule: None
             Children:
             - Name: Key
               Type: BaseDataVariableType
               DataType: UInt32
+              ModellingRule: None
             - Name: Value
               Type: BaseDataVariableType
               DataType: Color
-              Value: "#f0f0f0"
+              ModellingRule: None
+              Value: "#e4e4e4"
           - Name: Pair1
             Type: ValueMapPair
+            ModellingRule: None
             Children:
             - Name: Key
               Type: BaseDataVariableType
               DataType: UInt32
+              ModellingRule: None
               Value: 1
             - Name: Value
               Type: BaseDataVariableType
               DataType: Color
+              ModellingRule: None
               Value: "#00ff3f"
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssDryingOn"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 370.0
+      Value: 390.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -16599,22 +16538,8 @@ Children:
       ModellingRule: Optional
       Value: 40.0
   - Name: PH3
-    Type: ToggleButton
+    Type: Button
     Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/PnlComEssPh3_On"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -16641,45 +16566,47 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssPh3_On"
+            Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/MkTvsPh3_On"
         - Name: ns=3;Pairs
           Type: BaseObjectType
+          ModellingRule: None
           Children:
           - Name: Pair
             Type: ValueMapPair
+            ModellingRule: None
             Children:
             - Name: Key
               Type: BaseDataVariableType
               DataType: UInt32
+              ModellingRule: None
             - Name: Value
               Type: BaseDataVariableType
               DataType: Color
-              Value: "#f0f0f0"
+              ModellingRule: None
+              Value: "#e4e4e4"
           - Name: Pair1
             Type: ValueMapPair
+            ModellingRule: None
             Children:
             - Name: Key
               Type: BaseDataVariableType
               DataType: UInt32
+              ModellingRule: None
               Value: 1
             - Name: Value
               Type: BaseDataVariableType
               DataType: Color
+              ModellingRule: None
               Value: "#00ff3f"
     - Name: Enabled
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssDryingOn"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 470.0
+      Value: 490.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -16706,7 +16633,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 570.0
+      Value: 590.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -16761,7 +16688,7 @@ Children:
             - Name: Value
               Type: BaseDataVariableType
               DataType: Color
-              Value: "#f0f0f0"
+              Value: "#e4e4e4"
           - Name: Pair1
             Type: ValueMapPair
             Children:
@@ -16789,7 +16716,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 136.0
+      Value: 146.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -16841,7 +16768,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssPrehGradOn"
+            Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/MkTvsPrehGradOn"
         - Name: ns=3;Pairs
           Type: BaseObjectType
           Children:
@@ -16854,7 +16781,7 @@ Children:
             - Name: Value
               Type: BaseDataVariableType
               DataType: Color
-              Value: "#f0f0f0"
+              Value: "#e4e4e4"
           - Name: Pair2
             Type: ValueMapPair
             Children:
@@ -16882,7 +16809,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 186.0
+      Value: 196.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -16924,7 +16851,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/MkEssPrehTimeOn"
+            Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/MkTvsPrehTimeOn"
         - Name: ns=3;Pairs
           Type: BaseObjectType
           Children:
@@ -16937,7 +16864,7 @@ Children:
             - Name: Value
               Type: BaseDataVariableType
               DataType: Color
-              Value: "#f0f0f0"
+              Value: "#e4e4e4"
           - Name: Pair1
             Type: ValueMapPair
             Children:
@@ -16995,7 +16922,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 140.0
+      Value: 150.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -17037,7 +16964,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 190.0
+      Value: 200.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -17079,7 +17006,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 290.0
+      Value: 310.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -17121,7 +17048,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 390.0
+      Value: 410.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -17163,7 +17090,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 490.0
+      Value: 510.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -17205,7 +17132,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 139.0
+      Value: 149.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -17247,7 +17174,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 490.0
+      Value: 510.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -17263,6 +17190,10 @@ Children:
       DataType: TextVerticalAlignment
       ModellingRule: Optional
       Value: 1
+    - Name: ContentType
+      Type: BaseVariableType
+      DataType: InputTypeEnum
+      ModellingRule: Optional
   - Name: TextBox31
     Type: TextBox
     Children:
@@ -17289,7 +17220,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 390.0
+      Value: 410.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -17331,7 +17262,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 290.0
+      Value: 310.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -17364,7 +17295,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 270.0
+      Value: 280.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -17414,7 +17345,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 310.0
+      Value: 325.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -17448,52 +17379,6 @@ Children:
       DataType: Boolean
       ModellingRule: Optional
       Value: true
-  - Name: Label16
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"NamespaceIndex":30,"TextId":"Final humidity (%)"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 11.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 350.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 119.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 20.0
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 15.0
-    - Name: TextHorizontalAlignment
-      Type: BaseVariableType
-      DataType: TextHorizontalAlignment
-      ModellingRule: Optional
-    - Name: TextVerticalAlignment
-      Type: BaseVariableType
-      DataType: TextVerticalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: FontFamily
-      Type: BaseDataVariableType
-      DataType: Font
-      ModellingRule: Optional
   - Name: TextBox40
     Type: TextBox
     Children:
@@ -17504,7 +17389,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/WoodStartingTemperatureSet"
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/TvsWoodStartingTemperatureSet"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -17525,7 +17410,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 278.0
+      Value: 285.0
   - Name: TextBox41
     Type: TextBox
     Children:
@@ -17536,7 +17421,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/GradientTemperatureSet"
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/TvsGradientTemperatureSet"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -17557,39 +17442,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 310.0
-  - Name: TextBox42
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_ESS/FinalHumiditySet"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 45.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 215.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 348.0
+      Value: 325.0
   - Name: Label12
     Type: Label
     Children:
@@ -17607,7 +17460,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 320.0
+      Value: 315.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -17687,7 +17540,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 320.0
+      Value: 315.0
     - Name: TextHorizontalAlignment
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
@@ -17861,7 +17714,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 325.0
+      Value: 320.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -17936,7 +17789,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 590.0
+      Value: 610.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18116,7 +17969,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 590.0
+      Value: 610.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18158,7 +18011,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 180.0
+      Value: 190.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18200,7 +18053,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 580.0
+      Value: 600.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18252,7 +18105,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 170.0
+      Value: 180.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18294,7 +18147,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 570.0
+      Value: 590.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18460,7 +18313,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 280.0
+      Value: 300.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18502,7 +18355,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 270.0
+      Value: 290.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18544,7 +18397,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 380.0
+      Value: 400.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18586,7 +18439,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 370.0
+      Value: 390.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18628,7 +18481,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 480.0
+      Value: 500.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18670,7 +18523,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 470.0
+      Value: 490.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18712,7 +18565,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 590.0
+      Value: 610.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -18728,6 +18581,201 @@ Children:
       DataType: TextVerticalAlignment
       ModellingRule: Optional
       Value: 1
+  - Name: TextBox12
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/TvsWoodStartingTemperatureSet2"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 45.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 270.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 285.0
+  - Name: TextBox19
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/TvsWoodStartingTemperatureSet3"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 45.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 325.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 285.0
+  - Name: TextBox20
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/TvsGradientTemperatureSet2"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 45.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 270.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 325.0
+  - Name: TextBox21
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL_TVS/TvsGradientTemperatureSet3"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 45.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 325.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 325.0
+  - Name: ComboBox1
+    Type: ComboBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/WOOD_TYPE"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/WOOD_TYPE/SymbolName"
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+    - Name: SelectedValue
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+    - Name: SelectedItem
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/WOOD_TYPE/SymbolName"
+    - Name: UISelectedItem
+      Type: BaseDataVariableType
+      DataType: NodeId
+      AccessLevel: Read
+    - Name: UISelectedValue
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      AccessLevel: Read
+    - Class: Reference
+      Target: ns=5;i=480
+      Direction: Forward
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: Item
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/CLARK_HMI1_/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/GVL/WOOD_TYPE/SymbolName"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 6.0
+    - Name: SortOrder
+      Type: BaseDataVariableType
+      DataType: SortOrderEnum
+      ModellingRule: Optional
 - Name: ThermoGraphic
   Id: g=b7c052eb132dc096d80c6b90acbfa0d6
   Supertype: Screen
